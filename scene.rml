@@ -1,0 +1,1784 @@
+<Rive version="1" kind="fragment">
+
+    <Artboard
+        defaultStateMachineId="0:7"
+        viewModelId="0:40"
+        clip="true"
+        width="500"
+        height="500"
+        styleId="0:5"
+        name="Artboard"
+        id="0:2">
+
+        <Fill name="Background">
+            <SolidColor
+                colorValue="FF16181D"
+                name="Color"/>
+        </Fill>
+
+        <LayoutComponentStyle
+            name="Artboard Style"
+            id="0:5"/>
+
+        
+        <!-- =====================================================
+            00 RESET BUTTON
+            FIXED SCREEN UI
+            ===================================================== -->
+
+
+        <!-- BUTTON BACKGROUND -->
+
+        <Shape
+            x="455"
+            y="45"
+            name="Reset Button"
+            id="0:800">
+
+            <Ellipse
+                width="58"
+                height="58"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF2B2E35"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- RESET ICON : TOP BAR -->
+
+        <Shape
+            x="455"
+            y="34"
+            name="Reset Icon Top"
+            id="0:801">
+
+            <Rectangle
+                width="27"
+                height="6"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- RESET ICON : RIGHT BAR -->
+
+        <Shape
+            x="466"
+            y="44"
+            name="Reset Icon Right"
+            id="0:802">
+
+            <Rectangle
+                width="6"
+                height="24"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- RESET ICON : BOTTOM BAR -->
+
+        <Shape
+            x="454"
+            y="55"
+            name="Reset Icon Bottom"
+            id="0:803">
+
+            <Rectangle
+                width="26"
+                height="6"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- RESET ICON : ARROW HEAD -->
+
+        <Shape
+            x="441"
+            y="54"
+            name="Reset Icon Arrow"
+            id="0:804">
+
+            <Rectangle
+                width="10"
+                height="10"
+                cornerRadiusTL="2"
+                originX="0.5"
+                originY="0.5"
+                rotation="45"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             01 TALISMAN
+             TOPMOST
+             ===================================================== -->
+
+        <Shape
+            name="Talisman"
+            id="0:20">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:46"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:47"
+                propertyKey="14"/>
+
+            <Rectangle
+                width="34"
+                height="80"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             02 EFFECTS
+             ===================================================== -->
+
+
+        <!-- =====================================================
+             SELECTED
+             ===================================================== -->
+
+        <Shape
+            name="Selected Cross Horizontal"
+            id="0:512">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:226"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:227"
+                propertyKey="14"/>
+
+            <Rectangle
+                width="24"
+                height="6"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFFFFF"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Selected Cross Vertical"
+            id="0:513">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:226"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:227"
+                propertyKey="14"/>
+
+            <Rectangle
+                width="6"
+                height="24"
+                cornerRadiusTL="3"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFFFFF"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Selected Ring Inner"
+            id="0:511">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:226"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:227"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="46"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF16181D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Selected Ring Outer"
+            id="0:510">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:226"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:227"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="62"
+                height="62"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             BODY HOVER
+             ===================================================== -->
+
+        <Shape
+            name="Hover Ring Inner"
+            id="0:161">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:210"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:211"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="46"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF16181D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Hover Ring Outer"
+            id="0:160">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:210"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:211"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="62"
+                height="62"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             HOLD HOVER
+             ===================================================== -->
+
+        <Shape
+            name="Hold Hover Inner"
+            id="0:171">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:212"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:213"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="58"
+                height="42"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF16181D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Hold Hover Outer"
+            id="0:170">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:212"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:213"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="74"
+                height="58"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFF09A"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             CONFIRM
+             ===================================================== -->
+
+        <Shape
+            name="Confirm Inner"
+            id="0:181">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:214"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:215"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="66"
+                height="50"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF16181D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Confirm Outer"
+            id="0:180">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:214"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:215"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="92"
+                height="76"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             FREEZE DOTS
+             ===================================================== -->
+
+        <Shape
+            name="Freeze Dot 3"
+            id="0:500">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:220"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:221"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="18"
+                height="18"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Freeze Dot 2"
+            id="0:502">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:222"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:223"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="18"
+                height="18"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Freeze Dot 1"
+            id="0:504">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:224"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:225"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="18"
+                height="18"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFFFD84D"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             03 HANDS / FEET
+             ABOVE HOLDS
+             ===================================================== -->
+
+
+        <Shape
+            name="Left Hand"
+            id="0:408">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:308"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:309"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="34"
+                height="34"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Right Hand"
+            id="0:418">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:318"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:319"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="34"
+                height="34"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Left Foot"
+            id="0:428">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:328"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:329"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="36"
+                height="36"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape
+            name="Right Foot"
+            id="0:438">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:338"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:339"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="36"
+                height="36"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             04 CHARACTER CORE + LIMB SEGMENTS
+             BELOW HOLDS
+             ===================================================== -->
+
+
+        <!-- =====================================================
+             CHARACTER CORE
+             ===================================================== -->
+
+        <Node
+            name="Character Core"
+            id="0:60">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:50"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:51"
+                propertyKey="14"/>
+
+
+            <!-- HEAD -->
+
+            <Shape
+                name="Head Shape"
+                id="0:61">
+
+                <Ellipse
+                    width="70"
+                    height="70"
+                    originX="0.5"
+                    originY="0.5"/>
+
+                <Fill>
+                    <SolidColor colorValue="FF8B8F97"/>
+                </Fill>
+
+            </Shape>
+
+
+            <!-- BODY -->
+
+            <Shape
+                x="0"
+                y="105"
+                name="Body"
+                id="0:70">
+
+                <Rectangle
+                    width="80"
+                    height="140"
+                    cornerRadiusTL="10"
+                    originX="0.5"
+                    originY="0.5"/>
+
+                <Fill>
+                    <SolidColor colorValue="FF555A64"/>
+                </Fill>
+
+            </Shape>
+
+        </Node>
+
+
+        <!-- =====================================================
+             LEFT ARM
+             ===================================================== -->
+
+        <Shape name="Left Arm 0" id="0:400">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:300"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:301"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Arm 1" id="0:402">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:302"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:303"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Arm 2" id="0:404">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:304"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:305"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Arm 3" id="0:406">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:306"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:307"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             RIGHT ARM
+             ===================================================== -->
+
+        <Shape name="Right Arm 0" id="0:410">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:310"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:311"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Arm 1" id="0:412">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:312"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:313"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Arm 2" id="0:414">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:314"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:315"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Arm 3" id="0:416">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:316"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:317"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="30"
+                height="30"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             LEFT LEG
+             ===================================================== -->
+
+        <Shape name="Left Leg 0" id="0:420">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:320"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:321"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Leg 1" id="0:422">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:322"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:323"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Leg 2" id="0:424">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:324"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:325"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Left Leg 3" id="0:426">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:326"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:327"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <!-- =====================================================
+             RIGHT LEG
+             ===================================================== -->
+
+        <Shape name="Right Leg 0" id="0:430">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:330"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:331"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Leg 1" id="0:432">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:332"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:333"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Leg 2" id="0:434">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:334"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:335"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+
+        <Shape name="Right Leg 3" id="0:436">
+
+            <DataBindContext
+                sourcePathIds="0:40-0:336"
+                propertyKey="13"/>
+
+            <DataBindContext
+                sourcePathIds="0:40-0:337"
+                propertyKey="14"/>
+
+            <Ellipse
+                width="32"
+                height="32"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FF8B8F97"/>
+            </Fill>
+
+        </Shape>
+
+         <!-- =====================================================
+             05 HOLD SLOTS
+             ROUTE DATA CONTROLS POSITION
+             ===================================================== -->
+
+
+        <Shape name="Hold Slot 1" id="0:600">
+            <DataBindContext sourcePathIds="0:40-0:700" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:701" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 2" id="0:601">
+            <DataBindContext sourcePathIds="0:40-0:702" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:703" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 3" id="0:602">
+            <DataBindContext sourcePathIds="0:40-0:704" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:705" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 4" id="0:603">
+            <DataBindContext sourcePathIds="0:40-0:706" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:707" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 5" id="0:604">
+            <DataBindContext sourcePathIds="0:40-0:708" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:709" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 6" id="0:605">
+            <DataBindContext sourcePathIds="0:40-0:710" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:711" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 7" id="0:606">
+            <DataBindContext sourcePathIds="0:40-0:712" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:713" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 8" id="0:607">
+            <DataBindContext sourcePathIds="0:40-0:714" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:715" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 9" id="0:608">
+            <DataBindContext sourcePathIds="0:40-0:716" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:717" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 10" id="0:609">
+            <DataBindContext sourcePathIds="0:40-0:718" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:719" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 11" id="0:610">
+            <DataBindContext sourcePathIds="0:40-0:720" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:721" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <Shape name="Hold Slot 12" id="0:611">
+            <DataBindContext sourcePathIds="0:40-0:722" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:723" propertyKey="14"/>
+
+            <Ellipse
+                width="64"
+                height="46"
+                originX="0.5"
+                originY="0.5"/>
+
+            <Fill>
+                <SolidColor colorValue="FFE46A54"/>
+            </Fill>
+        </Shape>
+
+
+        <!-- =====================================================
+             06 INPUT
+             ===================================================== -->
+
+        <LayoutComponent
+            width="500"
+            height="500"
+            styleId="0:11"
+            name="Input Layer"
+            id="0:10">
+
+            <LayoutComponentStyle
+                layoutWidthScaleType="1"
+                layoutHeightScaleType="1"
+                widthUnitsValue="3"
+                heightUnitsValue="3"
+                name="Layout Style"
+                id="0:11"/>
+
+            <ScriptedLayout
+                scriptAssetId="0:200"
+                name="Track"
+                id="0:12"/>
+
+        </LayoutComponent>
+
+
+        <!-- =====================================================
+             07 STATE MACHINE
+             ===================================================== -->
+
+        <StateMachine
+            name="State Machine 1"
+            id="0:7">
+
+            <StateMachineLayer
+                name="Layer 1"
+                id="0:8">
+
+                <AnyState
+                    x="200"
+                    y="-120"/>
+
+                <ExitState
+                    x="400"
+                    y="-120"/>
+
+                <EntryState/>
+
+            </StateMachineLayer>
+
+        </StateMachine>
+
+    </Artboard>
+
+
+    <!-- =====================================================
+         08 VIEW MODEL
+         ===================================================== -->
+
+    <ViewModel
+        defaultInstanceId="0:41"
+        name="Game"
+        id="0:40">
+
+
+        <!-- =====================================================
+             POINTER
+             ===================================================== -->
+
+        <ViewModelPropertyNumber
+            name="talismanX"
+            id="0:46"/>
+
+        <ViewModelPropertyNumber
+            name="talismanY"
+            id="0:47"/>
+
+
+        <!-- =====================================================
+             CHARACTER ROOT
+             ===================================================== -->
+
+        <ViewModelPropertyNumber
+            name="headX"
+            id="0:50"/>
+
+        <ViewModelPropertyNumber
+            name="headY"
+            id="0:51"/>
+
+
+        <!-- =====================================================
+             EFFECTS
+             ===================================================== -->
+
+        <ViewModelPropertyNumber
+            name="selectionHaloX"
+            id="0:210"/>
+
+        <ViewModelPropertyNumber
+            name="selectionHaloY"
+            id="0:211"/>
+
+        <ViewModelPropertyNumber
+            name="holdHoverX"
+            id="0:212"/>
+
+        <ViewModelPropertyNumber
+            name="holdHoverY"
+            id="0:213"/>
+
+        <ViewModelPropertyNumber
+            name="confirmHaloX"
+            id="0:214"/>
+
+        <ViewModelPropertyNumber
+            name="confirmHaloY"
+            id="0:215"/>
+
+
+        <!-- =====================================================
+             FREEZE
+             ===================================================== -->
+
+        <ViewModelPropertyNumber
+            name="freezeDot3X"
+            id="0:220"/>
+
+        <ViewModelPropertyNumber
+            name="freezeDot3Y"
+            id="0:221"/>
+
+        <ViewModelPropertyNumber
+            name="freezeDot2X"
+            id="0:222"/>
+
+        <ViewModelPropertyNumber
+            name="freezeDot2Y"
+            id="0:223"/>
+
+        <ViewModelPropertyNumber
+            name="freezeDot1X"
+            id="0:224"/>
+
+        <ViewModelPropertyNumber
+            name="freezeDot1Y"
+            id="0:225"/>
+
+
+        <!-- =====================================================
+             SELECTED MARKER
+             ===================================================== -->
+
+        <ViewModelPropertyNumber
+            name="selectedMarkerX"
+            id="0:226"/>
+
+        <ViewModelPropertyNumber
+            name="selectedMarkerY"
+            id="0:227"/>
+
+
+        <!-- =====================================================
+             LEFT ARM
+             ===================================================== -->
+
+        <ViewModelPropertyNumber name="la0x" id="0:300"/>
+        <ViewModelPropertyNumber name="la0y" id="0:301"/>
+
+        <ViewModelPropertyNumber name="la1x" id="0:302"/>
+        <ViewModelPropertyNumber name="la1y" id="0:303"/>
+
+        <ViewModelPropertyNumber name="la2x" id="0:304"/>
+        <ViewModelPropertyNumber name="la2y" id="0:305"/>
+
+        <ViewModelPropertyNumber name="la3x" id="0:306"/>
+        <ViewModelPropertyNumber name="la3y" id="0:307"/>
+
+        <ViewModelPropertyNumber name="la4x" id="0:308"/>
+        <ViewModelPropertyNumber name="la4y" id="0:309"/>
+
+
+        <!-- =====================================================
+             RIGHT ARM
+             ===================================================== -->
+
+        <ViewModelPropertyNumber name="ra0x" id="0:310"/>
+        <ViewModelPropertyNumber name="ra0y" id="0:311"/>
+
+        <ViewModelPropertyNumber name="ra1x" id="0:312"/>
+        <ViewModelPropertyNumber name="ra1y" id="0:313"/>
+
+        <ViewModelPropertyNumber name="ra2x" id="0:314"/>
+        <ViewModelPropertyNumber name="ra2y" id="0:315"/>
+
+        <ViewModelPropertyNumber name="ra3x" id="0:316"/>
+        <ViewModelPropertyNumber name="ra3y" id="0:317"/>
+
+        <ViewModelPropertyNumber name="ra4x" id="0:318"/>
+        <ViewModelPropertyNumber name="ra4y" id="0:319"/>
+
+
+        <!-- =====================================================
+             LEFT LEG
+             ===================================================== -->
+
+        <ViewModelPropertyNumber name="ll0x" id="0:320"/>
+        <ViewModelPropertyNumber name="ll0y" id="0:321"/>
+
+        <ViewModelPropertyNumber name="ll1x" id="0:322"/>
+        <ViewModelPropertyNumber name="ll1y" id="0:323"/>
+
+        <ViewModelPropertyNumber name="ll2x" id="0:324"/>
+        <ViewModelPropertyNumber name="ll2y" id="0:325"/>
+
+        <ViewModelPropertyNumber name="ll3x" id="0:326"/>
+        <ViewModelPropertyNumber name="ll3y" id="0:327"/>
+
+        <ViewModelPropertyNumber name="ll4x" id="0:328"/>
+        <ViewModelPropertyNumber name="ll4y" id="0:329"/>
+
+
+        <!-- =====================================================
+             RIGHT LEG
+             ===================================================== -->
+
+        <ViewModelPropertyNumber name="rl0x" id="0:330"/>
+        <ViewModelPropertyNumber name="rl0y" id="0:331"/>
+
+        <ViewModelPropertyNumber name="rl1x" id="0:332"/>
+        <ViewModelPropertyNumber name="rl1y" id="0:333"/>
+
+        <ViewModelPropertyNumber name="rl2x" id="0:334"/>
+        <ViewModelPropertyNumber name="rl2y" id="0:335"/>
+
+        <ViewModelPropertyNumber name="rl3x" id="0:336"/>
+        <ViewModelPropertyNumber name="rl3y" id="0:337"/>
+
+        <ViewModelPropertyNumber name="rl4x" id="0:338"/>
+        <ViewModelPropertyNumber name="rl4y" id="0:339"/>
+
+
+        <!-- =====================================================
+             HOLD SLOT POSITIONS
+             ===================================================== -->
+
+        <ViewModelPropertyNumber name="hold1X" id="0:700"/>
+        <ViewModelPropertyNumber name="hold1Y" id="0:701"/>
+
+        <ViewModelPropertyNumber name="hold2X" id="0:702"/>
+        <ViewModelPropertyNumber name="hold2Y" id="0:703"/>
+
+        <ViewModelPropertyNumber name="hold3X" id="0:704"/>
+        <ViewModelPropertyNumber name="hold3Y" id="0:705"/>
+
+        <ViewModelPropertyNumber name="hold4X" id="0:706"/>
+        <ViewModelPropertyNumber name="hold4Y" id="0:707"/>
+
+        <ViewModelPropertyNumber name="hold5X" id="0:708"/>
+        <ViewModelPropertyNumber name="hold5Y" id="0:709"/>
+
+        <ViewModelPropertyNumber name="hold6X" id="0:710"/>
+        <ViewModelPropertyNumber name="hold6Y" id="0:711"/>
+
+        <ViewModelPropertyNumber name="hold7X" id="0:712"/>
+        <ViewModelPropertyNumber name="hold7Y" id="0:713"/>
+
+        <ViewModelPropertyNumber name="hold8X" id="0:714"/>
+        <ViewModelPropertyNumber name="hold8Y" id="0:715"/>
+
+        <ViewModelPropertyNumber name="hold9X" id="0:716"/>
+        <ViewModelPropertyNumber name="hold9Y" id="0:717"/>
+
+        <ViewModelPropertyNumber name="hold10X" id="0:718"/>
+        <ViewModelPropertyNumber name="hold10Y" id="0:719"/>
+
+        <ViewModelPropertyNumber name="hold11X" id="0:720"/>
+        <ViewModelPropertyNumber name="hold11Y" id="0:721"/>
+
+        <ViewModelPropertyNumber name="hold12X" id="0:722"/>
+        <ViewModelPropertyNumber name="hold12Y" id="0:723"/>
+
+
+        <!-- =====================================================
+             INSTANCE
+             ===================================================== -->
+
+        <ViewModelInstance
+            exports="true"
+            name="Instance"
+            id="0:41">
+
+
+            <!-- POINTER -->
+
+            <ViewModelInstanceNumber
+                propertyValue="250"
+                viewModelPropertyId="0:46"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="250"
+                viewModelPropertyId="0:47"/>
+
+
+            <!-- CHARACTER ROOT -->
+
+            <ViewModelInstanceNumber
+                propertyValue="250"
+                viewModelPropertyId="0:50"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="145"
+                viewModelPropertyId="0:51"/>
+
+
+            <!-- EFFECTS -->
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:210"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:211"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:212"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:213"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:214"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:215"/>
+
+
+            <!-- FREEZE -->
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:220"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:221"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:222"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:223"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:224"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:225"/>
+
+
+            <!-- SELECTED -->
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:226"/>
+
+            <ViewModelInstanceNumber
+                propertyValue="-500"
+                viewModelPropertyId="0:227"/>
+
+
+            <!-- LEFT ARM -->
+
+            <ViewModelInstanceNumber propertyValue="210" viewModelPropertyId="0:300"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:301"/>
+
+            <ViewModelInstanceNumber propertyValue="199" viewModelPropertyId="0:302"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:303"/>
+
+            <ViewModelInstanceNumber propertyValue="188" viewModelPropertyId="0:304"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:305"/>
+
+            <ViewModelInstanceNumber propertyValue="176" viewModelPropertyId="0:306"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:307"/>
+
+            <ViewModelInstanceNumber propertyValue="165" viewModelPropertyId="0:308"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:309"/>
+
+
+            <!-- RIGHT ARM -->
+
+            <ViewModelInstanceNumber propertyValue="290" viewModelPropertyId="0:310"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:311"/>
+
+            <ViewModelInstanceNumber propertyValue="301" viewModelPropertyId="0:312"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:313"/>
+
+            <ViewModelInstanceNumber propertyValue="312" viewModelPropertyId="0:314"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:315"/>
+
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:316"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:317"/>
+
+            <ViewModelInstanceNumber propertyValue="335" viewModelPropertyId="0:318"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:319"/>
+
+
+            <!-- LEFT LEG -->
+
+            <ViewModelInstanceNumber propertyValue="230" viewModelPropertyId="0:320"/>
+            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:321"/>
+
+            <ViewModelInstanceNumber propertyValue="229" viewModelPropertyId="0:322"/>
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:323"/>
+
+            <ViewModelInstanceNumber propertyValue="228" viewModelPropertyId="0:324"/>
+            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:325"/>
+
+            <ViewModelInstanceNumber propertyValue="226" viewModelPropertyId="0:326"/>
+            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:327"/>
+
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:328"/>
+            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:329"/>
+
+
+            <!-- RIGHT LEG -->
+
+            <ViewModelInstanceNumber propertyValue="270" viewModelPropertyId="0:330"/>
+            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:331"/>
+
+            <ViewModelInstanceNumber propertyValue="271" viewModelPropertyId="0:332"/>
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:333"/>
+
+            <ViewModelInstanceNumber propertyValue="272" viewModelPropertyId="0:334"/>
+            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:335"/>
+
+            <ViewModelInstanceNumber propertyValue="274" viewModelPropertyId="0:336"/>
+            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:337"/>
+
+            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:338"/>
+            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:339"/>
+
+
+            <!-- =================================================
+                 HOLD SLOT DEFAULTS
+                 ALL OFFSCREEN UNTIL ROUTE IS LOADED
+                 ================================================= -->
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:700"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:701"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:702"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:703"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:704"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:705"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:706"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:707"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:708"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:709"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:710"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:711"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:712"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:713"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:714"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:715"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:716"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:717"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:718"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:719"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:720"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:721"/>
+
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:722"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:723"/>
+
+        </ViewModelInstance>
+
+    </ViewModel>
+
+
+    <!-- =====================================================
+         SCRIPT
+         ===================================================== -->
+
+    <ScriptAsset
+        file="track.luau"
+        name="track"
+        id="0:200"/>
+
+</Rive>
