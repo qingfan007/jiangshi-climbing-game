@@ -123,22 +123,25 @@ RouteLogic.routes = {
 ------------------------------------------------------------
 
 function RouteLogic.pickRandomRoute(
-    self: any
+    self: any,
+    variation: number?
 )
 
-    local index =
-        math.random(
-            1,
-            #RouteLogic.routes
-        )
+    local count = #RouteLogic.routes
+    local index: number
 
+    if variation ~= nil then
+        -- Use the variation collected during the intro.
+        index = (math.floor(variation) % count) + 1
+    else
+        -- Fallback for the initial setup.
+        index = math.random(1, count)
+    end
 
-    self.currentRoute =
-        RouteLogic.routes[index]
+    self.currentRoute = RouteLogic.routes[index]
+    self.currentRouteIndex = index
 
-
-    self.currentRouteIndex =
-        index
+    print("Selected route:", index, self.currentRoute.name)
 
 end
 

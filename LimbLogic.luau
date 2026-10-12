@@ -174,6 +174,587 @@ local function writeLimb(
 
 end
 
+------------------------------------------------------------
+-- JIANGSHI ARM IMAGE VISUAL
+--
+-- Map PNG shoulder/hand anchors to game coordinates.
+------------------------------------------------------------
+
+local function updateArmImageVisual(
+    shoulderX: number,
+    shoulderY: number,
+    handX: number,
+    handY: number,
+
+    imageShoulderX: number,
+    imageShoulderY: number,
+    imageHandX: number,
+    imageHandY: number,
+
+    visualX: Property<number>?,
+    visualY: Property<number>?,
+    visualRotation: Property<number>?,
+    visualScaleX: Property<number>?
+)
+
+    --------------------------------------------------------
+    -- PNG DIMENSIONS
+    --------------------------------------------------------
+
+    local imageWidth = 1312
+    local imageHeight = 1199
+
+    local scaleY = 0.075
+
+    --------------------------------------------------------
+    -- GAME ARM VECTOR
+    --------------------------------------------------------
+
+    local dx = handX - shoulderX
+    local dy = handY - shoulderY
+
+    local targetLength =
+        math.sqrt(dx * dx + dy * dy)
+
+    local targetAngle =
+        math.atan2(dy, dx)
+
+    --------------------------------------------------------
+    -- PNG ARM VECTOR
+    --------------------------------------------------------
+
+    local sourceDX =
+        imageHandX - imageShoulderX
+
+    local sourceDY =
+        imageHandY - imageShoulderY
+
+    --------------------------------------------------------
+    -- SCALE X
+    --------------------------------------------------------
+
+    local scaledDY = sourceDY * scaleY
+
+    local horizontalLength =
+        math.sqrt(
+            math.max(
+                0.0001,
+                targetLength * targetLength
+                    - scaledDY * scaledDY
+            )
+        )
+
+    local scaleX =
+        horizontalLength / math.abs(sourceDX)
+
+    --------------------------------------------------------
+    -- ROTATION
+    --
+    -- Compensate for the PNG's original diagonal angle.
+    --------------------------------------------------------
+
+    local sourceAngle =
+        math.atan2(
+            sourceDY * scaleY,
+            sourceDX * scaleX
+        )
+
+    local rotation =
+        targetAngle - sourceAngle
+
+    --------------------------------------------------------
+    -- POSITION
+    --
+    -- Anchor the PNG shoulder to the game shoulder.
+    --------------------------------------------------------
+
+    local localX =
+        (imageShoulderX - imageWidth / 2)
+        * scaleX
+
+    local localY =
+        (imageShoulderY - imageHeight / 2)
+        * scaleY
+
+    local cosR = math.cos(rotation)
+    local sinR = math.sin(rotation)
+
+    local rotatedX =
+        localX * cosR - localY * sinR
+
+    local rotatedY =
+        localX * sinR + localY * cosR
+
+    local centerX =
+        shoulderX - rotatedX
+
+    local centerY =
+        shoulderY - rotatedY
+
+    --------------------------------------------------------
+    -- UPDATE VIEWMODEL
+    --------------------------------------------------------
+
+    setNumber(visualX, centerX)
+    setNumber(visualY, centerY)
+
+    setNumber(
+        visualRotation,
+        rotation
+    )
+
+    setNumber(
+        visualScaleX,
+        scaleX
+    )
+
+end
+
+
+------------------------------------------------------------
+-- LEFT ARM
+------------------------------------------------------------
+
+local function updateLeftArmVisual(
+    self: any,
+    shoulderX: number,
+    shoulderY: number
+)
+
+    updateArmImageVisual(
+        shoulderX + 8,
+        shoulderY - 40,
+
+        self.leftHandX,
+        self.leftHandY,
+
+        -- PNG SHOULDER
+        1050,
+        230,
+
+        -- PNG HAND
+        140,
+        520,
+
+        self.leftArmVisualX,
+        self.leftArmVisualY,
+        self.leftArmVisualRotation,
+        self.leftArmVisualScaleX
+    )
+
+end
+
+
+------------------------------------------------------------
+-- RIGHT ARM
+------------------------------------------------------------
+
+local function updateRightArmVisual(
+    self: any,
+    shoulderX: number,
+    shoulderY: number
+)
+
+    updateArmImageVisual(
+        shoulderX - 8,
+        shoulderY - 40,
+
+        self.rightHandX,
+        self.rightHandY,
+
+        -- PNG SHOULDER
+        250,
+        240,
+
+        -- PNG HAND
+        1170,
+        570,
+
+        self.rightArmVisualX,
+        self.rightArmVisualY,
+        self.rightArmVisualRotation,
+        self.rightArmVisualScaleX
+    )
+
+end
+
+------------------------------------------------------------
+-- JIANGSHI SPLIT LEG VISUALS
+--
+-- Pants:
+--   Hip anchored, vertical stretch, rigid rotation.
+--
+-- Shoes:
+--   Foot anchored, fixed uniform scale.
+------------------------------------------------------------
+
+------------------------------------------------------------
+-- JIANGSHI SPLIT LEG VISUAL
+--
+-- Reuse the original stick-figure bone:
+-- hip -> foot
+--
+-- Pants connect hip to ankle.
+-- Shoes stay at foot position with fixed size.
+------------------------------------------------------------
+
+------------------------------------------------------------
+-- JIANGSHI RIGID L-SHAPED LEG
+--
+-- Pants and shoe rotate together.
+-- Knee does not bend.
+-- Ankle does not bend.
+-- Shoe size remains fixed.
+-- Pants connect hip to shoe ankle.
+------------------------------------------------------------
+
+local function updateSplitLegVisual(
+    hipX: number,
+    hipY: number,
+    footX: number,
+    footY: number,
+
+    pantsTopX: number,
+    pantsTopY: number,
+    pantsBottomY: number,
+
+    shoeFootX: number,
+    shoeFootY: number,
+
+    fixedScale: number,
+
+    pantsX: Property<number>?,
+    pantsY: Property<number>?,
+    pantsRotation: Property<number>?,
+    pantsScaleX: Property<number>?,
+    pantsScaleY: Property<number>?,
+
+    shoeX: Property<number>?,
+    shoeY: Property<number>?,
+    shoeRotation: Property<number>?,
+    shoeScale: Property<number>?
+)
+
+    local imageWidth = 1024
+    local imageHeight = 1536
+
+    --------------------------------------------------------
+    -- 1. ORIGINAL LEG DIRECTION
+    --
+    -- Reuse the existing hip -> foot coordinates.
+    --------------------------------------------------------
+
+    local dx = footX - hipX
+    local dy = footY - hipY
+
+    local rotation =
+        math.atan2(dy, dx) - math.pi / 2
+
+    -- Keep rotation continuous when the leg crosses its vertical axis.
+    if rotation > math.pi then
+        rotation = rotation - 2 * math.pi
+    elseif rotation < -math.pi then
+        rotation = rotation + 2 * math.pi
+    end
+
+    --------------------------------------------------------
+    -- 2. ANKLE SOURCE ANCHOR
+    --
+    -- Pants and shoe share this connection point.
+    -- Both assets use the original 1024x1536 canvas.
+    --------------------------------------------------------
+
+    local ankleSourceX = pantsTopX
+    local ankleSourceY = pantsBottomY
+
+    local shoeOffsetX =
+        (ankleSourceX - shoeFootX) * fixedScale
+
+    local shoeOffsetY =
+        (ankleSourceY - shoeFootY) * fixedScale
+
+    --------------------------------------------------------
+    -- 3. ROTATION
+    --
+    -- Find a common angle that keeps the pants aligned
+    -- with the shoe's ankle connection.
+    --
+    -- The entire leg rotates together as one rigid L.
+    --------------------------------------------------------
+
+    -- Keep leg rotation aligned with hip -> foot.
+    -- Avoid iterative rotation flipping.
+
+    rotation = math.atan2(
+        footY - hipY,
+        footX - hipX
+    ) - math.pi / 2
+
+    --------------------------------------------------------
+    -- 4. FINAL ANKLE POSITION
+    --------------------------------------------------------
+
+    local cosR = math.cos(rotation)
+    local sinR = math.sin(rotation)
+
+    local ankleX =
+        footX
+        + shoeOffsetX * cosR
+        - shoeOffsetY * sinR
+
+    local ankleY =
+        footY
+        + shoeOffsetX * sinR
+        + shoeOffsetY * cosR
+    
+    -- Align pants with the actual shoe ankle position
+    local pantsAngle =
+        math.atan2(
+            ankleY - hipY,
+            ankleX - hipX
+        ) - math.pi / 2
+
+    local pantsCos = math.cos(pantsAngle)
+    local pantsSin = math.sin(pantsAngle)
+
+    --------------------------------------------------------
+    -- 5. PANTS LENGTH
+    --
+    -- Width stays fixed.
+    -- Length follows the original climbing skeleton.
+    --------------------------------------------------------
+
+    local legDX = ankleX - hipX
+    local legDY = ankleY - hipY
+
+    local targetLength =
+        math.sqrt(
+            legDX * legDX
+            + legDY * legDY
+        )
+
+    local sourceLength =
+        math.max(
+            1,
+            pantsBottomY - pantsTopY
+        )
+
+    local scaleX = fixedScale
+
+    local scaleY =
+        math.max(0.001, targetLength)
+        / sourceLength
+
+    --------------------------------------------------------
+    -- 6. POSITION PANTS
+    --
+    -- Align the pants' upper anchor with the game hip.
+    --------------------------------------------------------
+
+    local pantsLocalX =
+        (pantsTopX - imageWidth / 2)
+        * scaleX
+
+    local pantsLocalY =
+        (pantsTopY - imageHeight / 2)
+        * scaleY
+
+    local pantsRotatedX =
+        pantsLocalX * pantsCos
+        - pantsLocalY * pantsSin
+
+    local pantsRotatedY =
+        pantsLocalX * pantsSin
+        + pantsLocalY * pantsCos
+
+    local pantsCenterX =
+        hipX - pantsRotatedX
+
+    local pantsCenterY =
+        hipY - pantsRotatedY
+
+    --------------------------------------------------------
+    -- 7. POSITION SHOE
+    --
+    -- Same rotation as the pants.
+    -- Fixed uniform scale.
+    --------------------------------------------------------
+
+    local shoeLocalX =
+        (shoeFootX - imageWidth / 2)
+        * fixedScale
+
+    local shoeLocalY =
+        (shoeFootY - imageHeight / 2)
+        * fixedScale
+
+    local shoeRotatedX =
+        shoeLocalX * cosR
+        - shoeLocalY * sinR
+
+    local shoeRotatedY =
+        shoeLocalX * sinR
+        + shoeLocalY * cosR
+
+    local shoeCenterX =
+        footX - shoeRotatedX
+
+    local shoeCenterY =
+        footY - shoeRotatedY
+
+    --------------------------------------------------------
+    -- 8. UPDATE PANTS
+    --------------------------------------------------------
+
+    setNumber(
+        pantsX,
+        pantsCenterX
+    )
+
+    setNumber(
+        pantsY,
+        pantsCenterY
+    )
+
+    setNumber(
+        pantsRotation,
+        pantsAngle
+    )
+
+    setNumber(
+        pantsScaleX,
+        scaleX
+    )
+
+    setNumber(
+        pantsScaleY,
+        scaleY
+    )
+
+    --------------------------------------------------------
+    -- 9. UPDATE SHOE
+    --
+    -- Pants and shoe use exactly the same rotation.
+    --------------------------------------------------------
+
+    setNumber(
+        shoeX,
+        shoeCenterX
+    )
+
+    setNumber(
+        shoeY,
+        shoeCenterY
+    )
+
+    setNumber(
+        shoeRotation,
+        rotation
+    )
+
+    setNumber(
+        shoeScale,
+        fixedScale
+    )
+
+end
+
+
+------------------------------------------------------------
+-- LEFT LEG
+------------------------------------------------------------
+
+local function updateLeftLegVisual(
+    self: any,
+    hipX: number,
+    hipY: number
+)
+
+    updateSplitLegVisual(
+        hipX,
+        hipY,
+
+        self.leftFootX,
+        self.leftFootY,
+
+        -- PNG pants top
+        510,
+        545,
+
+        -- PNG pants bottom / overlap
+        913,
+
+        -- PNG shoe foot anchor
+        465,
+        1100,
+
+        -- Fixed visual width / shoe scale
+        0.15,
+
+        -- Pants properties
+        self.leftLegVisualX,
+        self.leftLegVisualY,
+        self.leftLegVisualRotation,
+        self.leftLegVisualScaleX,
+        self.leftLegVisualScaleY,
+
+        -- Shoe properties
+        self.leftShoeVisualX,
+        self.leftShoeVisualY,
+        self.leftShoeVisualRotation,
+        self.leftShoeVisualScale
+    )
+
+end
+
+
+------------------------------------------------------------
+-- RIGHT LEG
+------------------------------------------------------------
+
+local function updateRightLegVisual(
+    self: any,
+    hipX: number,
+    hipY: number
+)
+
+    updateSplitLegVisual(
+        hipX,
+        hipY,
+
+        self.rightFootX,
+        self.rightFootY,
+
+        -- PNG pants top
+        470,
+        315,
+
+        -- PNG pants bottom / overlap
+        927,
+
+        -- PNG shoe foot anchor
+        570,
+        1160,
+
+        -- Fixed visual width / shoe scale
+        0.095,
+
+        -- Pants properties
+        self.rightLegVisualX,
+        self.rightLegVisualY,
+        self.rightLegVisualRotation,
+        self.rightLegVisualScaleX,
+        self.rightLegVisualScaleY,
+
+        -- Shoe properties
+        self.rightShoeVisualX,
+        self.rightShoeVisualY,
+        self.rightShoeVisualRotation,
+        self.rightShoeVisualScale
+    )
+
+end
+
 
 ------------------------------------------------------------
 -- PART POSITION
@@ -400,6 +981,12 @@ function LimbLogic.updateAll(
         self.leftHandY
     )
 
+    updateLeftArmVisual(
+        self,
+        leftShoulderX,
+        leftShoulderY
+    )
+
 
     local rightShoulderX,
         rightShoulderY =
@@ -429,6 +1016,11 @@ function LimbLogic.updateAll(
         self.rightHandY
     )
 
+    updateRightArmVisual(
+        self,
+        rightShoulderX,
+        rightShoulderY
+    )
 
     local leftHipX,
         leftHipY =
@@ -458,6 +1050,11 @@ function LimbLogic.updateAll(
         self.leftFootY
     )
 
+    updateLeftLegVisual(
+        self,
+        leftHipX,
+        leftHipY
+    )
 
     local rightHipX,
         rightHipY =
@@ -485,6 +1082,12 @@ function LimbLogic.updateAll(
 
         self.rightFootX,
         self.rightFootY
+    )
+
+    updateRightLegVisual(
+        self,
+        rightHipX,
+        rightHipY
     )
 
 end
@@ -708,7 +1311,13 @@ local function checkWin(
     self: any
 )
 
-    if self.targetHoldKind ~= "top" then
+    -- Final hold comes from the active route (not a hard-coded index).
+    local route = self.currentRoute
+    if route == nil or #route.holds == 0 then
+        return
+    end
+    local finalHold = route.holds[#route.holds]
+    if self.targetHoldId ~= finalHold.id then
         return
     end
 
@@ -730,6 +1339,10 @@ local function checkWin(
 
     self.gameWon =
         true
+
+    -- Start the secret shelter cutscene after the hand actually attaches.
+    self.endingPhase = 1
+    self.endingTimer = 0
 
 
     self.selectedPart =

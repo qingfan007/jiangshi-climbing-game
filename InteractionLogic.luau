@@ -171,6 +171,54 @@ local function hitPartAt(
 
     end
 
+    ------------------------------------------------------------
+    -- ARM HIT TEST
+    -- Allow clicking anywhere along the arm.
+    ------------------------------------------------------------
+
+    local function considerArm(
+        part: string,
+        shoulderX: number,
+        shoulderY: number,
+        handX: number,
+        handY: number
+    )
+
+        local dx = handX - shoulderX
+        local dy = handY - shoulderY
+
+        local lengthSquared =
+            dx * dx + dy * dy
+
+        local t = 0
+
+        if lengthSquared > 0 then
+
+            t = (
+                (x - shoulderX) * dx
+                + (y - shoulderY) * dy
+            ) / lengthSquared
+
+            t = math.max(0, math.min(1, t))
+
+        end
+
+        local closestX =
+            shoulderX + dx * t
+
+        local closestY =
+            shoulderY + dy * t
+
+        considerPart(
+            part,
+            closestX,
+            closestY,
+            40,
+            40
+        )
+
+    end
+
 
     --------------------------------------------------------
     -- HEAD
@@ -192,27 +240,33 @@ local function hitPartAt(
 
 
     --------------------------------------------------------
-    -- HANDS
-    --
-    -- Slightly larger interaction area so hands near
-    -- the chest are easier to select.
+    -- JIANGSHI ARMS
     --------------------------------------------------------
 
-    considerPart(
+    considerArm(
         "leftArm",
+
+        self.bodyPositionX
+            + Constants.LEFT_SHOULDER_OFFSET_X,
+
+        self.bodyPositionY
+            + Constants.LEFT_SHOULDER_OFFSET_Y,
+
         self.leftHandX,
-        self.leftHandY,
-        40,
-        40
+        self.leftHandY
     )
 
-
-    considerPart(
+    considerArm(
         "rightArm",
+
+        self.bodyPositionX
+            + Constants.RIGHT_SHOULDER_OFFSET_X,
+
+        self.bodyPositionY
+            + Constants.RIGHT_SHOULDER_OFFSET_Y,
+
         self.rightHandX,
-        self.rightHandY,
-        40,
-        40
+        self.rightHandY
     )
 
 
