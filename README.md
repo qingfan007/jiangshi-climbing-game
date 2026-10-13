@@ -12,7 +12,7 @@ Built for the **Rive Halloween Challenge 2026**.
 
 ## 🎮 Play the Game
 
-🎬 **[Watch the Demo & View Challenge Entry]([https://on.contra.com/jd6NtP](https://on.contra.com/jd6NtP))**
+🎬 **[Watch the Demo & View Challenge Entry](https://on.contra.com/jd6NtP)**
 
 🎮 **[Play Jiangshi: Race Against Sunrise](https://unique-tanuki-2d7f20.netlify.app/)**
 
