@@ -2,3 +2,6 @@ name: jiangshi-climb
 logs:
   file: build/rive.log
   problems: build/problems.log
+push:
+  projectId: 2019961
+  fileId: 2648086

@@ -6,6 +6,7 @@ local InteractionLogic = require("InteractionLogic")
 local RouteLogic = require("RouteLogic")
 local CameraLogic = require("CameraLogic")
 local RestartLogic = require("RestartLogic")
+local DEBUG_ENDING_SHORTCUT = false
 
 
 ------------------------------------------------------------
@@ -16,7 +17,6 @@ local RestartLogic = require("RestartLogic")
 -- Track only controls how that Dyno FEELS visually.
 ------------------------------------------------------------
 
-local DEBUG_ENDING_SHORTCUT = true -- DEBUG BUILD ONLY: click 0..35,0..35 to test the ending without re-climbing.
 
 local DYNO_CROUCH_DURATION =
     0.08
@@ -205,6 +205,21 @@ type Track = {
 
     isDyno: boolean,
 
+    --------------------------------------------------------    
+    -- AUDIO
+    --------------------------------------------------------
+    grabAudio: AudioSource?,
+    dynoAudio: AudioSource?,
+    rockfallAudio: AudioSource?,
+    coffinAudio: AudioSource?,
+    safeAudio: AudioSource?,
+    ambienceAudio: AudioSource?,
+
+    lastMoving: boolean,
+    lastEndingPhase: number,
+    coffinSoundPlayed: boolean,
+    audioStarted: boolean,
+    ambienceSound: AudioSound?,
 
     --------------------------------------------------------
     -- DYNO VISUAL STATE
@@ -360,6 +375,25 @@ type Track = {
 ------------------------------------------------------------
 -- HELPERS
 ------------------------------------------------------------
+
+------------------------------------------------------------
+-- AUDIO HELPER
+------------------------------------------------------------
+
+local function playSfx(
+    source: AudioSource?,
+    volume: number
+)
+    if source == nil then
+        return
+    end
+
+    local sound = Audio.play(source)
+
+    if sound ~= nil then
+        sound.volume = volume
+    end
+end
 
 local function setNumber(
     property: Property<number>?,
@@ -727,24 +761,33 @@ function pointerDown(
 
     local pointerY =
         event.position.y
-
-
-    -- Development convenience: explicitly opt in with --debug when installing.
-    -- Production has this disabled; normal climbing is unchanged.
-    if DEBUG_ENDING_SHORTCUT and pointerX < 36 and pointerY < 36 and not self.gameWon then
+    
+    -- DEBUG: Click top-left corner to jump directly to ending
+    if DEBUG_ENDING_SHORTCUT
+        and pointerX < 36
+        and pointerY < 36
+        and not self.gameWon
+    then
         self.cameraY = 485
+
         self.bodyPositionX, self.bodyPositionY = 250, 305
         self.leftHandX, self.leftHandY = 250, 225
         self.rightHandX, self.rightHandY = 320, 284
         self.leftFootX, self.leftFootY = 220, 404
         self.rightFootX, self.rightFootY = 284, 415
-        self.leftHandHoldId, self.rightHandHoldId = 0,0
-        self.leftFootHoldId, self.rightFootHoldId = 0,0
+
+        self.leftHandHoldId = 0
+        self.rightHandHoldId = 0
+        self.leftFootHoldId = 0
+        self.rightFootHoldId = 0
+
         self.isMoving = false
         self.gameWon = true
         self.endingPhase = 0
+
         return
     end
+
 
     --------------------------------------------------------
     -- RETRY BUTTON
@@ -760,6 +803,8 @@ function pointerDown(
         )
         self.endingPhase = 0
         self.endingTimer = 0
+        self.lastEndingPhase = 0
+        self.coffinSoundPlayed = false
         setNumber(self.cinematicRigX,0)
         setNumber(self.cinematicRigY,0)
         setNumber(self.cinematicRigScale,1)
@@ -945,6 +990,23 @@ function init(
     if vm == nil then
         return true
     end
+
+    --------------------------------------------------------
+    -- AUDIO ASSETS
+    --------------------------------------------------------
+
+    self.grabAudio = context:audio("grab")
+    self.dynoAudio = context:audio("dyno")
+    self.rockfallAudio = context:audio("rockfall")
+    self.coffinAudio = context:audio("coffin")
+    self.safeAudio = context:audio("safe")
+    self.ambienceAudio = context:audio("ambience")
+
+    self.lastMoving = false
+    self.lastEndingPhase = 0
+    self.coffinSoundPlayed = false
+    self.audioStarted = false
+    self.ambienceSound = nil
 
     --------------------------------------------------------
     -- PROLOGUE INITIAL STATE
@@ -1660,8 +1722,8 @@ local function advanceCaveEnding(self: Track, seconds: number): boolean
         x = endMix(ox, hx + 8, flight)
 
         y =
-            endMix(oy, hy + 4, flight)
-            - 55 * jump
+            endMix(oy, hy - 20, flight)
+            - 70 * jump
             + 6 * squat
 
         -- Shrink into the cave instead of disappearing suddenly.
@@ -1676,7 +1738,7 @@ local function advanceCaveEnding(self: Track, seconds: number): boolean
         if t >= 3.82 then
             -- Enter the cave and land on the lower-left floor.
             x = 105
-            y = 365
+            y = 345
             heroScale = 0.58
             showRig = true
         end
@@ -1705,7 +1767,7 @@ local function advanceCaveEnding(self: Track, seconds: number): boolean
     -- Move toward the center of the coffin opening.
     x = endMix(105, 255, leap)
 
-    y = endMix(365, 375, leap)
+    y = endMix(345, 375, leap)
         - 62 * jump
         + 7 * squat
 
@@ -1860,6 +1922,30 @@ function advance(
     seconds: number
 ): boolean
 
+    ------------------------------------------------------------
+    -- BACKGROUND AMBIENCE
+    ------------------------------------------------------------
+
+    ------------------------------------------------------------
+    -- LOOP BACKGROUND AMBIENCE
+    ------------------------------------------------------------
+
+    if self.ambienceAudio ~= nil then
+
+        if self.ambienceSound == nil
+            or self.ambienceSound:completed()
+        then
+
+            self.ambienceSound = Audio.play(self.ambienceAudio)
+
+            if self.ambienceSound ~= nil then
+                self.ambienceSound.volume = 0.45
+            end
+
+        end
+
+    end
+
     --------------------------------------------------------
     -- PROLOGUE: STORY -> CURTAINS OPEN -> GAME
     --------------------------------------------------------
@@ -1918,9 +2004,11 @@ function advance(
 
     -- Win is raised ONLY by existing LimbLogic.checkWin after a HAND FINISHES on the top hold.
     -- Start once on the following tick, then leave all climbing systems untouched.
-    if self.gameWon and self.endingPhase == 0 then
+    if self.gameWon and (self.endingPhase == 0 or (self.endingPhase == 1 and self.lastEndingPhase == 0 and self.endingTimer == 0)) then
         self.endingPhase = 1
         self.endingTimer = 0
+        self.lastEndingPhase = 0
+        self.coffinSoundPlayed = false
         self.endingOriginX = self.bodyPositionX
         self.endingOriginY = self.bodyPositionY
         self.endingOriginLHx, self.endingOriginLHy = self.leftHandX, self.leftHandY
@@ -1932,7 +2020,28 @@ function advance(
     end
 
     if self.endingPhase > 0 then
-        return advanceCaveEnding(self, seconds)
+
+        local active = advanceCaveEnding(self, seconds)
+        local phase = self.endingPhase
+
+        -- Play the coffin closing sound when the lid actually shuts
+        -- (phase 3, animation time 3.84), not when the next shot starts.
+        if phase == 3 and self.endingTimer >= 3.84 and not self.coffinSoundPlayed then
+            playSfx(self.coffinAudio, 0.80)
+            self.coffinSoundPlayed = true
+        end
+
+        if phase ~= self.lastEndingPhase then
+            if phase == 2 then
+                playSfx(self.rockfallAudio, 0.70)
+            elseif phase == 6 then
+                playSfx(self.safeAudio, 0.80)
+            end
+
+            self.lastEndingPhase = phase
+        end
+
+        return active
     end
 
     -- Normal climbing has a true 1:1 exterior camera. It is only directed after victory.
@@ -2224,6 +2333,19 @@ function advance(
         seconds
     )
 
+    ------------------------------------------------------------
+    -- CLIMBING AUDIO
+    ------------------------------------------------------------
+
+    if self.isMoving and not self.lastMoving then
+        if self.isDyno then
+            playSfx(self.dynoAudio, 0.60)
+        else
+            playSfx(self.grabAudio, 0.35)
+        end
+    end
+
+    self.lastMoving = self.isMoving
 
     return true
 
@@ -2350,6 +2472,22 @@ return function(
         rightLegVisualRotation = nil,
         rightLegVisualScaleX = nil,
         rightLegVisualScaleY = nil,
+
+        ----------------------------------------------------
+        -- AUDIO
+        ----------------------------------------------------
+        grabAudio = nil,
+        dynoAudio = nil,
+        rockfallAudio = nil,
+        coffinAudio = nil,
+        safeAudio = nil,
+        ambienceAudio = nil,
+
+        lastMoving = false,
+        lastEndingPhase = 0,
+        coffinSoundPlayed = false,
+        audioStarted = false,
+        ambienceSound = nil,
 
         ----------------------------------------------------
         -- POINTER

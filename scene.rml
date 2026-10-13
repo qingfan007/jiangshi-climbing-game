@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="0:7" viewModelId="0:40" clip="true" width="500" height="500" styleId="0:5" name="Artboard" id="0:2">
-        <Fill name="Background">
-            <SolidColor colorValue="FF0A1020" name="Color"/>
+        <Fill name="Background" id="0:2854">
+            <SolidColor colorValue="FF0A1020" name="Color" id="0:2855"/>
         </Fill>
         <!-- INTRO JIANGSHI HEAD -->
         <Image
@@ -18,11 +18,11 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:2831"
-                propertyKey="14"/>
+                propertyKey="14" id="0:2856"/>
 
             <DataBindContext
                 sourcePathIds="0:40-0:2832"
-                propertyKey="15"/>
+                propertyKey="15" id="0:2857"/>
 
         </Image>
         <!-- =====================================================
@@ -43,7 +43,7 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:2822"
-                propertyKey="14"/>
+                propertyKey="14" id="0:2858"/>
 
         </Image>
 
@@ -57,16 +57,16 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:2820"
-                propertyKey="13"/>
+                propertyKey="13" id="0:2859"/>
 
             <Rectangle
                 width="252"
                 height="510"
                 originX="0.5"
-                originY="0.5"/>
+                originY="0.5" id="0:2860"/>
 
-            <Fill>
-                <SolidColor colorValue="FF090D19"/>
+            <Fill id="0:2861">
+                <SolidColor colorValue="FF090D19" id="0:2862"/>
             </Fill>
 
         </Shape>
@@ -81,23 +81,23 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:2821"
-                propertyKey="13"/>
+                propertyKey="13" id="0:2863"/>
 
             <Rectangle
                 width="252"
                 height="510"
                 originX="0.5"
-                originY="0.5"/>
+                originY="0.5" id="0:2864"/>
 
-            <Fill>
-                <SolidColor colorValue="FF090D19"/>
+            <Fill id="0:2865">
+                <SolidColor colorValue="FF090D19" id="0:2866"/>
             </Fill>
 
         </Shape>
         <Image name="Cinematic Dust Screen Wipe" id="0:1615" assetId="0:1616" x="250" y="-1200" originX="0.5" originY="0.5">
-            <DataBindContext sourcePathIds="0:40-0:1611" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1611" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1610" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1611" propertyKey="17" id="0:2867"/>
+            <DataBindContext sourcePathIds="0:40-0:1611" propertyKey="16" id="0:2868"/>
+            <DataBindContext sourcePathIds="0:40-0:1610" propertyKey="14" id="0:2869"/>
         </Image>
         <LayoutComponentStyle name="Artboard Style" id="0:5"/>
         <!-- SAFE ENDING: JIANGSHI PEACE SIGN -->
@@ -114,44 +114,44 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:1106"
-                propertyKey="14"/>
+                propertyKey="14" id="0:2870"/>
 
         </Image>
         <Image name="Cave Safe Lettering" id="0:1301" assetId="0:1330" x="330" y="-1200" originX="0.5" originY="0.5" scaleX="0.68" scaleY="0.68">
-            <DataBindContext sourcePathIds="0:40-0:1431" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1431" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1106" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1431" propertyKey="17" id="0:2871"/>
+            <DataBindContext sourcePathIds="0:40-0:1431" propertyKey="16" id="0:2872"/>
+            <DataBindContext sourcePathIds="0:40-0:1106" propertyKey="14" id="0:2873"/>
         </Image>
         <Image name="Dawn Diffuse Warmth" id="0:1450" assetId="0:1452" x="-1200" y="-1200" originX="0.5" originY="0.5">
-            <DataBindContext sourcePathIds="0:40-0:1422" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1422" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1421" propertyKey="14"/>
-            <DataBindContext sourcePathIds="0:40-0:1420" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:1422" propertyKey="17" id="0:2874"/>
+            <DataBindContext sourcePathIds="0:40-0:1422" propertyKey="16" id="0:2875"/>
+            <DataBindContext sourcePathIds="0:40-0:1421" propertyKey="14" id="0:2876"/>
+            <DataBindContext sourcePathIds="0:40-0:1420" propertyKey="13" id="0:2877"/>
         </Image>
         <Image name="Dawn Sky Bloom" id="0:1451" assetId="0:1453" x="-1200" y="-1200" originX="0.5" originY="0.5">
-            <DataBindContext sourcePathIds="0:40-0:1425" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1425" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1424" propertyKey="14"/>
-            <DataBindContext sourcePathIds="0:40-0:1423" propertyKey="13"/>
+            <DataBindContext sourcePathIds="0:40-0:1425" propertyKey="17" id="0:2878"/>
+            <DataBindContext sourcePathIds="0:40-0:1425" propertyKey="16" id="0:2879"/>
+            <DataBindContext sourcePathIds="0:40-0:1424" propertyKey="14" id="0:2880"/>
+            <DataBindContext sourcePathIds="0:40-0:1423" propertyKey="13" id="0:2881"/>
         </Image>
         <Image name="Cave Coffin Lid" id="0:1304" assetId="0:1333" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.92" scaleY="0.92">
-            <DataBindContext sourcePathIds="0:40-0:1419" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1419" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1418" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1108" propertyKey="14"/>
-            <DataBindContext sourcePathIds="0:40-0:1153" propertyKey="15"/>
+            <DataBindContext sourcePathIds="0:40-0:1419" propertyKey="17" id="0:2882"/>
+            <DataBindContext sourcePathIds="0:40-0:1419" propertyKey="16" id="0:2883"/>
+            <DataBindContext sourcePathIds="0:40-0:1418" propertyKey="13" id="0:2884"/>
+            <DataBindContext sourcePathIds="0:40-0:1108" propertyKey="14" id="0:2885"/>
+            <DataBindContext sourcePathIds="0:40-0:1153" propertyKey="15" id="0:2886"/>
         </Image>
         <Image name="Cave Coffin Foreground" id="0:1305" assetId="0:1454" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="1" scaleY="1">
-            <DataBindContext sourcePathIds="0:40-0:1414" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1414" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1412" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1413" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1414" propertyKey="17" id="0:2887"/>
+            <DataBindContext sourcePathIds="0:40-0:1414" propertyKey="16" id="0:2888"/>
+            <DataBindContext sourcePathIds="0:40-0:1412" propertyKey="13" id="0:2889"/>
+            <DataBindContext sourcePathIds="0:40-0:1413" propertyKey="14" id="0:2890"/>
         </Image>
         <Image name="Cave Dust" id="0:1308" assetId="0:1337" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.5" scaleY="0.5">
-            <DataBindContext sourcePathIds="0:40-0:1434" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1434" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1433" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1154" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1434" propertyKey="17" id="0:2891"/>
+            <DataBindContext sourcePathIds="0:40-0:1434" propertyKey="16" id="0:2892"/>
+            <DataBindContext sourcePathIds="0:40-0:1433" propertyKey="13" id="0:2893"/>
+            <DataBindContext sourcePathIds="0:40-0:1154" propertyKey="14" id="0:2894"/>
         </Image>
         <Image
             name="Reset Button Icon"
@@ -167,7 +167,7 @@
 
             <DataBindContext
                 sourcePathIds="0:40-0:1426"
-                propertyKey="13"/>
+                propertyKey="13" id="0:2895"/>
         </Image>
         
         <Image
@@ -179,181 +179,181 @@
             scaleX="0.045"
             scaleY="0.045">
 
-            <DataBindContext sourcePathIds="0:40-0:46" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:47" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:46" propertyKey="13" id="0:2896"/>
+            <DataBindContext sourcePathIds="0:40-0:47" propertyKey="14" id="0:2897"/>
 
         </Image>
 
 
         <Shape name="Selected Cross Horizontal" id="0:512">
-            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14"/>
-            <Rectangle width="24" height="6" cornerRadiusTL="3" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FFFFFFFF"/>
+            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13" id="0:2898"/>
+            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14" id="0:2899"/>
+            <Rectangle width="24" height="6" cornerRadiusTL="3" originX="0.5" originY="0.5" id="0:2900"/>
+            <Fill id="0:2901">
+                <SolidColor colorValue="FFFFFFFF" id="0:2902"/>
             </Fill>
         </Shape>
         <Shape name="Selected Cross Vertical" id="0:513">
-            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14"/>
-            <Rectangle width="6" height="24" cornerRadiusTL="3" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FFFFFFFF"/>
+            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13" id="0:2903"/>
+            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14" id="0:2904"/>
+            <Rectangle width="6" height="24" cornerRadiusTL="3" originX="0.5" originY="0.5" id="0:2905"/>
+            <Fill id="0:2906">
+                <SolidColor colorValue="FFFFFFFF" id="0:2907"/>
             </Fill>
         </Shape>
         <Shape name="Selected Ring Inner" id="0:511">
-            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14"/>
-            <Ellipse width="46" height="46" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF16181D"/>
+            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13" id="0:2908"/>
+            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14" id="0:2909"/>
+            <Ellipse width="46" height="46" originX="0.5" originY="0.5" id="0:2910"/>
+            <Fill id="0:2911">
+                <SolidColor colorValue="FF16181D" id="0:2912"/>
             </Fill>
         </Shape>
         <Shape name="Selected Ring Outer" id="0:510">
-            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14"/>
-            <Ellipse width="62" height="62" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF5EEAD4"/>
+            <DataBindContext sourcePathIds="0:40-0:226" propertyKey="13" id="0:2913"/>
+            <DataBindContext sourcePathIds="0:40-0:227" propertyKey="14" id="0:2914"/>
+            <Ellipse width="62" height="62" originX="0.5" originY="0.5" id="0:2915"/>
+            <Fill id="0:2916">
+                <SolidColor colorValue="FF5EEAD4" id="0:2917"/>
             </Fill>
         </Shape>
         <Shape name="Hover Ring Inner" id="0:161">
-            <DataBindContext sourcePathIds="0:40-0:210" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:211" propertyKey="14"/>
-            <Ellipse width="46" height="46" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF16181D"/>
+            <DataBindContext sourcePathIds="0:40-0:210" propertyKey="13" id="0:2918"/>
+            <DataBindContext sourcePathIds="0:40-0:211" propertyKey="14" id="0:2919"/>
+            <Ellipse width="46" height="46" originX="0.5" originY="0.5" id="0:2920"/>
+            <Fill id="0:2921">
+                <SolidColor colorValue="FF16181D" id="0:2922"/>
             </Fill>
         </Shape>
         <Shape name="Hover Ring Outer" id="0:160">
-            <DataBindContext sourcePathIds="0:40-0:210" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:211" propertyKey="14"/>
-            <Ellipse width="62" height="62" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF5EEAD4"/>
+            <DataBindContext sourcePathIds="0:40-0:210" propertyKey="13" id="0:2923"/>
+            <DataBindContext sourcePathIds="0:40-0:211" propertyKey="14" id="0:2924"/>
+            <Ellipse width="62" height="62" originX="0.5" originY="0.5" id="0:2925"/>
+            <Fill id="0:2926">
+                <SolidColor colorValue="FF5EEAD4" id="0:2927"/>
             </Fill>
         </Shape>
         <Shape name="Hold Hover Inner" id="0:171">
-            <DataBindContext sourcePathIds="0:40-0:212" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:213" propertyKey="14"/>
-            <Ellipse width="58" height="42" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF16181D"/>
+            <DataBindContext sourcePathIds="0:40-0:212" propertyKey="13" id="0:2928"/>
+            <DataBindContext sourcePathIds="0:40-0:213" propertyKey="14" id="0:2929"/>
+            <Ellipse width="58" height="42" originX="0.5" originY="0.5" id="0:2930"/>
+            <Fill id="0:2931">
+                <SolidColor colorValue="FF16181D" id="0:2932"/>
             </Fill>
         </Shape>
         <Shape name="Hold Hover Outer" id="0:170">
-            <DataBindContext sourcePathIds="0:40-0:212" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:213" propertyKey="14"/>
-            <Ellipse width="74" height="58" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FFFFF09A"/>
+            <DataBindContext sourcePathIds="0:40-0:212" propertyKey="13" id="0:2933"/>
+            <DataBindContext sourcePathIds="0:40-0:213" propertyKey="14" id="0:2934"/>
+            <Ellipse width="74" height="58" originX="0.5" originY="0.5" id="0:2935"/>
+            <Fill id="0:2936">
+                <SolidColor colorValue="FFFFF09A" id="0:2937"/>
             </Fill>
         </Shape>
         <Shape name="Confirm Inner" id="0:181">
-            <DataBindContext sourcePathIds="0:40-0:214" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:215" propertyKey="14"/>
-            <Ellipse width="66" height="50" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF16181D"/>
+            <DataBindContext sourcePathIds="0:40-0:214" propertyKey="13" id="0:2938"/>
+            <DataBindContext sourcePathIds="0:40-0:215" propertyKey="14" id="0:2939"/>
+            <Ellipse width="66" height="50" originX="0.5" originY="0.5" id="0:2940"/>
+            <Fill id="0:2941">
+                <SolidColor colorValue="FF16181D" id="0:2942"/>
             </Fill>
         </Shape>
         <Shape name="Confirm Outer" id="0:180">
-            <DataBindContext sourcePathIds="0:40-0:214" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:215" propertyKey="14"/>
-            <Ellipse width="92" height="76" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FFFFD84D"/>
+            <DataBindContext sourcePathIds="0:40-0:214" propertyKey="13" id="0:2943"/>
+            <DataBindContext sourcePathIds="0:40-0:215" propertyKey="14" id="0:2944"/>
+            <Ellipse width="92" height="76" originX="0.5" originY="0.5" id="0:2945"/>
+            <Fill id="0:2946">
+                <SolidColor colorValue="FFFFD84D" id="0:2947"/>
             </Fill>
         </Shape>
         <Shape name="Freeze Dot 3" id="0:500">
-            <DataBindContext sourcePathIds="0:40-0:220" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:221" propertyKey="14"/>
-            <Ellipse width="18" height="18" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF5EEAD4"/>
+            <DataBindContext sourcePathIds="0:40-0:220" propertyKey="13" id="0:2948"/>
+            <DataBindContext sourcePathIds="0:40-0:221" propertyKey="14" id="0:2949"/>
+            <Ellipse width="18" height="18" originX="0.5" originY="0.5" id="0:2950"/>
+            <Fill id="0:2951">
+                <SolidColor colorValue="FF5EEAD4" id="0:2952"/>
             </Fill>
         </Shape>
         <Shape name="Freeze Dot 2" id="0:502">
-            <DataBindContext sourcePathIds="0:40-0:222" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:223" propertyKey="14"/>
-            <Ellipse width="18" height="18" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF5EEAD4"/>
+            <DataBindContext sourcePathIds="0:40-0:222" propertyKey="13" id="0:2953"/>
+            <DataBindContext sourcePathIds="0:40-0:223" propertyKey="14" id="0:2954"/>
+            <Ellipse width="18" height="18" originX="0.5" originY="0.5" id="0:2955"/>
+            <Fill id="0:2956">
+                <SolidColor colorValue="FF5EEAD4" id="0:2957"/>
             </Fill>
         </Shape>
         <Shape name="Freeze Dot 1" id="0:504">
-            <DataBindContext sourcePathIds="0:40-0:224" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:225" propertyKey="14"/>
-            <Ellipse width="18" height="18" originX="0.5" originY="0.5"/>
-            <Fill>
-                <SolidColor colorValue="FF5EEAD4"/>
+            <DataBindContext sourcePathIds="0:40-0:224" propertyKey="13" id="0:2958"/>
+            <DataBindContext sourcePathIds="0:40-0:225" propertyKey="14" id="0:2959"/>
+            <Ellipse width="18" height="18" originX="0.5" originY="0.5" id="0:2960"/>
+            <Fill id="0:2961">
+                <SolidColor colorValue="FF5EEAD4" id="0:2962"/>
             </Fill>
         </Shape>
         <Node name="Original Jiangshi Cinematic Rig" id="0:1390" x="0" y="0">
-            <DataBindContext sourcePathIds="0:40-0:1417" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1417" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1432" propertyKey="15"/>
-            <DataBindContext sourcePathIds="0:40-0:1405" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1406" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1417" propertyKey="17" id="0:2963"/>
+            <DataBindContext sourcePathIds="0:40-0:1417" propertyKey="16" id="0:2964"/>
+            <DataBindContext sourcePathIds="0:40-0:1432" propertyKey="15" id="0:2965"/>
+            <DataBindContext sourcePathIds="0:40-0:1405" propertyKey="13" id="0:2966"/>
+            <DataBindContext sourcePathIds="0:40-0:1406" propertyKey="14" id="0:2967"/>
             <Image name="Jiangshi Left Arm" id="0:73" assetId="0:904" originX="0.5" originY="0.5" scaleY="0.075">
-                <DataBindContext sourcePathIds="0:40-0:340" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:341" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:342" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:343" propertyKey="16"/>
+                <DataBindContext sourcePathIds="0:40-0:340" propertyKey="13" id="0:2968"/>
+                <DataBindContext sourcePathIds="0:40-0:341" propertyKey="14" id="0:2969"/>
+                <DataBindContext sourcePathIds="0:40-0:342" propertyKey="15" id="0:2970"/>
+                <DataBindContext sourcePathIds="0:40-0:343" propertyKey="16" id="0:2971"/>
             </Image>
             <Image name="Jiangshi Right Arm" id="0:74" assetId="0:905" x="325" y="355" originX="0.5" originY="0.5" scaleX="0.075" scaleY="0.075">
-                <DataBindContext sourcePathIds="0:40-0:344" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:345" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:346" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:347" propertyKey="16"/>
+                <DataBindContext sourcePathIds="0:40-0:344" propertyKey="13" id="0:2972"/>
+                <DataBindContext sourcePathIds="0:40-0:345" propertyKey="14" id="0:2973"/>
+                <DataBindContext sourcePathIds="0:40-0:346" propertyKey="15" id="0:2974"/>
+                <DataBindContext sourcePathIds="0:40-0:347" propertyKey="16" id="0:2975"/>
             </Image>
             <Node name="Character Core" id="0:60">
-                <DataBindContext sourcePathIds="0:40-0:50" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:51" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:50" propertyKey="13" id="0:2976"/>
+                <DataBindContext sourcePathIds="0:40-0:51" propertyKey="14" id="0:2977"/>
                 <Image name="Jiangshi Head Back" id="0:61" assetId="0:900" originX="0.5" originY="0.5" scaleX="0.07" scaleY="0.07"/>
                 <Image x="0" y="0" name="Jiangshi Braid Back" id="0:71" assetId="0:902" originX="0.5" originY="0" scaleX="0.07" scaleY="0.07"/>
                 <Image x="0" y="80" name="Jiangshi Torso Back" id="0:70" assetId="0:901" originX="0.5" originY="0.5" scaleX="0.12" scaleY="0.12"/>
                 <Image x="0" y="145" name="Jiangshi Robe Bottom Back" id="0:72" assetId="0:903" originX="0.5" originY="0.5" scaleX="0.11" scaleY="0.11"/>
             </Node>
             <Image name="Jiangshi Left Pants" id="0:75" assetId="0:908" originX="0.5" originY="0.5">
-                <DataBindContext sourcePathIds="0:40-0:350" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:351" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:352" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:353" propertyKey="16"/>
-                <DataBindContext sourcePathIds="0:40-0:354" propertyKey="17"/>
+                <DataBindContext sourcePathIds="0:40-0:350" propertyKey="13" id="0:2978"/>
+                <DataBindContext sourcePathIds="0:40-0:351" propertyKey="14" id="0:2979"/>
+                <DataBindContext sourcePathIds="0:40-0:352" propertyKey="15" id="0:2980"/>
+                <DataBindContext sourcePathIds="0:40-0:353" propertyKey="16" id="0:2981"/>
+                <DataBindContext sourcePathIds="0:40-0:354" propertyKey="17" id="0:2982"/>
             </Image>
             <Image name="Jiangshi Right Pants" id="0:76" assetId="0:910" originX="0.5" originY="0.5">
-                <DataBindContext sourcePathIds="0:40-0:355" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:356" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:357" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:358" propertyKey="16"/>
-                <DataBindContext sourcePathIds="0:40-0:359" propertyKey="17"/>
+                <DataBindContext sourcePathIds="0:40-0:355" propertyKey="13" id="0:2983"/>
+                <DataBindContext sourcePathIds="0:40-0:356" propertyKey="14" id="0:2984"/>
+                <DataBindContext sourcePathIds="0:40-0:357" propertyKey="15" id="0:2985"/>
+                <DataBindContext sourcePathIds="0:40-0:358" propertyKey="16" id="0:2986"/>
+                <DataBindContext sourcePathIds="0:40-0:359" propertyKey="17" id="0:2987"/>
             </Image>
             <Image name="Jiangshi Left Shoe" id="0:77" assetId="0:909" originX="0.5" originY="0.5" scaleY="0.15">
-                <DataBindContext sourcePathIds="0:40-0:360" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:361" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:362" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:363" propertyKey="16"/>
+                <DataBindContext sourcePathIds="0:40-0:360" propertyKey="13" id="0:2988"/>
+                <DataBindContext sourcePathIds="0:40-0:361" propertyKey="14" id="0:2989"/>
+                <DataBindContext sourcePathIds="0:40-0:362" propertyKey="15" id="0:2990"/>
+                <DataBindContext sourcePathIds="0:40-0:363" propertyKey="16" id="0:2991"/>
             </Image>
             <Image name="Jiangshi Right Shoe" id="0:78" assetId="0:911" originX="0.5" originY="0.5" scaleY="0.095">
-                <DataBindContext sourcePathIds="0:40-0:364" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:365" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:366" propertyKey="15"/>
-                <DataBindContext sourcePathIds="0:40-0:367" propertyKey="16"/>
+                <DataBindContext sourcePathIds="0:40-0:364" propertyKey="13" id="0:2992"/>
+                <DataBindContext sourcePathIds="0:40-0:365" propertyKey="14" id="0:2993"/>
+                <DataBindContext sourcePathIds="0:40-0:366" propertyKey="15" id="0:2994"/>
+                <DataBindContext sourcePathIds="0:40-0:367" propertyKey="16" id="0:2995"/>
             </Image>
         </Node>
         <Image name="Cave Interior Confirmed Painting" id="0:1306" assetId="0:1455" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="1" scaleY="1">
-            <DataBindContext sourcePathIds="0:40-0:1411" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1411" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1410" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1103" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1411" propertyKey="17" id="0:2996"/>
+            <DataBindContext sourcePathIds="0:40-0:1411" propertyKey="16" id="0:2997"/>
+            <DataBindContext sourcePathIds="0:40-0:1410" propertyKey="13" id="0:2998"/>
+            <DataBindContext sourcePathIds="0:40-0:1103" propertyKey="14" id="0:2999"/>
         </Image>
         <!-- STARTING PLATFORM + LANTERN -->
         <Node name="Starting Platform Position" id="0:1950">
 
             <DataBindContext
                 sourcePathIds="0:40-0:960"
-                propertyKey="14"/>
+                propertyKey="14" id="0:3000"/>
 
             <Image
                 name="Starting Platform Lantern"
@@ -368,157 +368,157 @@
 
         </Node>
         <Node name="Exterior World Camera — cliff / holds / aperture together" id="0:1800" x="0" y="0">
-            <DataBindContext sourcePathIds="0:40-0:1803" propertyKey="17"/>
-            <DataBindContext sourcePathIds="0:40-0:1803" propertyKey="16"/>
-            <DataBindContext sourcePathIds="0:40-0:1801" propertyKey="13"/>
-            <DataBindContext sourcePathIds="0:40-0:1802" propertyKey="14"/>
+            <DataBindContext sourcePathIds="0:40-0:1803" propertyKey="17" id="0:3001"/>
+            <DataBindContext sourcePathIds="0:40-0:1803" propertyKey="16" id="0:3002"/>
+            <DataBindContext sourcePathIds="0:40-0:1801" propertyKey="13" id="0:3003"/>
+            <DataBindContext sourcePathIds="0:40-0:1802" propertyKey="14" id="0:3004"/>
             <Image name="Cave Debris" id="0:1307" assetId="0:1336" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.38" scaleY="0.38">
-                <DataBindContext sourcePathIds="0:40-0:1401" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1402" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:1401" propertyKey="13" id="0:3005"/>
+                <DataBindContext sourcePathIds="0:40-0:1402" propertyKey="14" id="0:3006"/>
             </Image>
             <Image name="Independent Falling Rock 1" id="0:1631" assetId="0:1641" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.7" scaleY="0.7">
-                <DataBindContext sourcePathIds="0:40-0:1620" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1621" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:1622" propertyKey="15"/>
+                <DataBindContext sourcePathIds="0:40-0:1620" propertyKey="13" id="0:3007"/>
+                <DataBindContext sourcePathIds="0:40-0:1621" propertyKey="14" id="0:3008"/>
+                <DataBindContext sourcePathIds="0:40-0:1622" propertyKey="15" id="0:3009"/>
             </Image>
             <Image name="Independent Falling Rock 2" id="0:1632" assetId="0:1642" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.7" scaleY="0.7">
-                <DataBindContext sourcePathIds="0:40-0:1623" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1624" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:1625" propertyKey="15"/>
+                <DataBindContext sourcePathIds="0:40-0:1623" propertyKey="13" id="0:3010"/>
+                <DataBindContext sourcePathIds="0:40-0:1624" propertyKey="14" id="0:3011"/>
+                <DataBindContext sourcePathIds="0:40-0:1625" propertyKey="15" id="0:3012"/>
             </Image>
             <Image name="Independent Falling Rock 3" id="0:1633" assetId="0:1643" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.7" scaleY="0.7">
-                <DataBindContext sourcePathIds="0:40-0:1626" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1627" propertyKey="14"/>
-                <DataBindContext sourcePathIds="0:40-0:1628" propertyKey="15"/>
+                <DataBindContext sourcePathIds="0:40-0:1626" propertyKey="13" id="0:3013"/>
+                <DataBindContext sourcePathIds="0:40-0:1627" propertyKey="14" id="0:3014"/>
+                <DataBindContext sourcePathIds="0:40-0:1628" propertyKey="15" id="0:3015"/>
             </Image>
             <Image name="Cave Jagged Aperture" id="0:1309" assetId="0:1338" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.67" scaleY="0.67">
-                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="17"/>
-                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="16"/>
-                <DataBindContext sourcePathIds="0:40-0:1435" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1403" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="17" id="0:3016"/>
+                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="16" id="0:3017"/>
+                <DataBindContext sourcePathIds="0:40-0:1435" propertyKey="13" id="0:3018"/>
+                <DataBindContext sourcePathIds="0:40-0:1403" propertyKey="14" id="0:3019"/>
             </Image>
             <Image name="Cave Fracture" id="0:1303" assetId="0:1332" x="250" y="-1200" originX="0.5" originY="0.5" scaleX="0.52" scaleY="0.52">
-                <DataBindContext sourcePathIds="0:40-0:1416" propertyKey="17"/>
-                <DataBindContext sourcePathIds="0:40-0:1416" propertyKey="16"/>
-                <DataBindContext sourcePathIds="0:40-0:1401" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1404" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:1416" propertyKey="17" id="0:3020"/>
+                <DataBindContext sourcePathIds="0:40-0:1416" propertyKey="16" id="0:3021"/>
+                <DataBindContext sourcePathIds="0:40-0:1401" propertyKey="13" id="0:3022"/>
+                <DataBindContext sourcePathIds="0:40-0:1404" propertyKey="14" id="0:3023"/>
             </Image>
             <Image name="Cave Darkness Underlay" id="0:1510" assetId="0:1511" x="250" y="-1200" originX="0.5" originY="0.5">
-                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="17"/>
-                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="16"/>
-                <DataBindContext sourcePathIds="0:40-0:1435" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:1403" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="17" id="0:3024"/>
+                <DataBindContext sourcePathIds="0:40-0:1415" propertyKey="16" id="0:3025"/>
+                <DataBindContext sourcePathIds="0:40-0:1435" propertyKey="13" id="0:3026"/>
+                <DataBindContext sourcePathIds="0:40-0:1403" propertyKey="14" id="0:3027"/>
             </Image>
             <Node name="Pumpkin Marker 1" id="0:980">
-                <DataBindContext sourcePathIds="0:40-0:700" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:701" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:700" propertyKey="13" id="0:3028"/>
+                <DataBindContext sourcePathIds="0:40-0:701" propertyKey="14" id="0:3029"/>
                 <Image name="Pumpkin Icon 1" id="0:1000" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 1" id="0:600" assetId="0:913" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:700" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:701" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:700" propertyKey="13" id="0:3030"/>
+                <DataBindContext sourcePathIds="0:40-0:701" propertyKey="14" id="0:3031"/>
             </Image>
             <Node name="Pumpkin Marker 2" id="0:981">
-                <DataBindContext sourcePathIds="0:40-0:702" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:703" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:702" propertyKey="13" id="0:3032"/>
+                <DataBindContext sourcePathIds="0:40-0:703" propertyKey="14" id="0:3033"/>
                 <Image name="Pumpkin Icon 2" id="0:1001" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 2" id="0:601" assetId="0:914" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:702" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:703" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:702" propertyKey="13" id="0:3034"/>
+                <DataBindContext sourcePathIds="0:40-0:703" propertyKey="14" id="0:3035"/>
             </Image>
             <Node name="Pumpkin Marker 3" id="0:982">
-                <DataBindContext sourcePathIds="0:40-0:704" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:705" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:704" propertyKey="13" id="0:3036"/>
+                <DataBindContext sourcePathIds="0:40-0:705" propertyKey="14" id="0:3037"/>
                 <Image name="Pumpkin Icon 3" id="0:1002" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 3" id="0:602" assetId="0:915" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:704" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:705" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:704" propertyKey="13" id="0:3038"/>
+                <DataBindContext sourcePathIds="0:40-0:705" propertyKey="14" id="0:3039"/>
             </Image>
             <Node name="Pumpkin Marker 4" id="0:983">
-                <DataBindContext sourcePathIds="0:40-0:706" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:707" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:706" propertyKey="13" id="0:3040"/>
+                <DataBindContext sourcePathIds="0:40-0:707" propertyKey="14" id="0:3041"/>
                 <Image name="Pumpkin Icon 4" id="0:1003" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 4" id="0:603" assetId="0:916" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:706" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:707" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:706" propertyKey="13" id="0:3042"/>
+                <DataBindContext sourcePathIds="0:40-0:707" propertyKey="14" id="0:3043"/>
             </Image>
             <Node name="Pumpkin Marker 5" id="0:984">
-                <DataBindContext sourcePathIds="0:40-0:708" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:709" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:708" propertyKey="13" id="0:3044"/>
+                <DataBindContext sourcePathIds="0:40-0:709" propertyKey="14" id="0:3045"/>
                 <Image name="Pumpkin Icon 5" id="0:1004" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 5" id="0:604" assetId="0:913" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:708" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:709" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:708" propertyKey="13" id="0:3046"/>
+                <DataBindContext sourcePathIds="0:40-0:709" propertyKey="14" id="0:3047"/>
             </Image>
             <Node name="Pumpkin Marker 6" id="0:985">
-                <DataBindContext sourcePathIds="0:40-0:710" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:711" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:710" propertyKey="13" id="0:3048"/>
+                <DataBindContext sourcePathIds="0:40-0:711" propertyKey="14" id="0:3049"/>
                 <Image name="Pumpkin Icon 6" id="0:1005" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 6" id="0:605" assetId="0:914" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:710" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:711" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:710" propertyKey="13" id="0:3050"/>
+                <DataBindContext sourcePathIds="0:40-0:711" propertyKey="14" id="0:3051"/>
             </Image>
             <Node name="Pumpkin Marker 7" id="0:986">
-                <DataBindContext sourcePathIds="0:40-0:712" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:713" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:712" propertyKey="13" id="0:3052"/>
+                <DataBindContext sourcePathIds="0:40-0:713" propertyKey="14" id="0:3053"/>
                 <Image name="Pumpkin Icon 7" id="0:1006" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 7" id="0:606" assetId="0:915" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:712" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:713" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:712" propertyKey="13" id="0:3054"/>
+                <DataBindContext sourcePathIds="0:40-0:713" propertyKey="14" id="0:3055"/>
             </Image>
             <Node name="Pumpkin Marker 8" id="0:987">
-                <DataBindContext sourcePathIds="0:40-0:714" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:715" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:714" propertyKey="13" id="0:3056"/>
+                <DataBindContext sourcePathIds="0:40-0:715" propertyKey="14" id="0:3057"/>
                 <Image name="Pumpkin Icon 8" id="0:1007" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 8" id="0:607" assetId="0:916" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:714" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:715" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:714" propertyKey="13" id="0:3058"/>
+                <DataBindContext sourcePathIds="0:40-0:715" propertyKey="14" id="0:3059"/>
             </Image>
             <Node name="Pumpkin Marker 9" id="0:988">
-                <DataBindContext sourcePathIds="0:40-0:716" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:717" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:716" propertyKey="13" id="0:3060"/>
+                <DataBindContext sourcePathIds="0:40-0:717" propertyKey="14" id="0:3061"/>
                 <Image name="Pumpkin Icon 9" id="0:1008" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 9" id="0:608" assetId="0:913" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:716" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:717" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:716" propertyKey="13" id="0:3062"/>
+                <DataBindContext sourcePathIds="0:40-0:717" propertyKey="14" id="0:3063"/>
             </Image>
             <Node name="Pumpkin Marker 10" id="0:989">
-                <DataBindContext sourcePathIds="0:40-0:718" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:719" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:718" propertyKey="13" id="0:3064"/>
+                <DataBindContext sourcePathIds="0:40-0:719" propertyKey="14" id="0:3065"/>
                 <Image name="Pumpkin Icon 10" id="0:1009" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 10" id="0:609" assetId="0:914" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:718" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:719" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:718" propertyKey="13" id="0:3066"/>
+                <DataBindContext sourcePathIds="0:40-0:719" propertyKey="14" id="0:3067"/>
             </Image>
             <Node name="Pumpkin Marker 11" id="0:990">
-                <DataBindContext sourcePathIds="0:40-0:720" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:721" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:720" propertyKey="13" id="0:3068"/>
+                <DataBindContext sourcePathIds="0:40-0:721" propertyKey="14" id="0:3069"/>
                 <Image name="Pumpkin Icon 11" id="0:1010" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 11" id="0:610" assetId="0:915" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:720" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:721" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:720" propertyKey="13" id="0:3070"/>
+                <DataBindContext sourcePathIds="0:40-0:721" propertyKey="14" id="0:3071"/>
             </Image>
             <Node name="Pumpkin Marker 12" id="0:991">
-                <DataBindContext sourcePathIds="0:40-0:722" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:723" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:722" propertyKey="13" id="0:3072"/>
+                <DataBindContext sourcePathIds="0:40-0:723" propertyKey="14" id="0:3073"/>
                 <Image name="Pumpkin Icon 12" id="0:1011" assetId="0:992" x="22" y="-28" originX="0.5" originY="0.5" scaleX="0.045" scaleY="0.045"/>
             </Node>
             <Image name="Rock Hold 12" id="0:611" assetId="0:916" originX="0.5" originY="0.5" scaleX="0.32" scaleY="0.32">
-                <DataBindContext sourcePathIds="0:40-0:722" propertyKey="13"/>
-                <DataBindContext sourcePathIds="0:40-0:723" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:722" propertyKey="13" id="0:3074"/>
+                <DataBindContext sourcePathIds="0:40-0:723" propertyKey="14" id="0:3075"/>
             </Image>
             <Image name="Cliff World Illustration" id="0:970" assetId="0:912" x="250" y="-350" originX="0.5" originY="0.5" scaleX="1.2" scaleY="1">
-                <DataBindContext sourcePathIds="0:40-0:960" propertyKey="14"/>
+                <DataBindContext sourcePathIds="0:40-0:960" propertyKey="14" id="0:3076"/>
             </Image>
         </Node>
         <LayoutComponent width="500" height="500" styleId="0:11" name="Input Layer" id="0:10">
@@ -527,9 +527,9 @@
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="0:7">
             <StateMachineLayer name="Layer 1" id="0:8">
-                <AnyState x="200" y="-120"/>
-                <ExitState x="400" y="-120"/>
-                <EntryState/>
+                <AnyState x="200" y="-120" id="0:3077"/>
+                <ExitState x="400" y="-120" id="0:3078"/>
+                <EntryState id="0:3079"/>
             </StateMachineLayer>
         </StateMachine>
     </Artboard>
@@ -714,166 +714,166 @@
         <ViewModelPropertyNumber name="exteriorCameraY" id="0:1802"/>
         <ViewModelPropertyNumber name="exteriorCameraScale" id="0:1803"/>
         <ViewModelInstance exports="true" name="Instance" id="0:41">
-            <ViewModelInstanceNumber viewModelPropertyId="0:2831" propertyValue="85"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:2832" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:2820" propertyValue="125"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:2821" propertyValue="375"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:2822" propertyValue="250"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1100"/>
-            <ViewModelInstanceNumber propertyValue="170" viewModelPropertyId="0:1101"/>
-            <ViewModelInstanceNumber propertyValue="330" viewModelPropertyId="0:1102"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1103"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1104"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1105"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1106"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1107"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1108"/>
-            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:1150"/>
-            <ViewModelInstanceNumber propertyValue="0.32" viewModelPropertyId="0:1151"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1152"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1153"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1154"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1401"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1402"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1403"/>
-            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1404"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1405"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1406"/>
-            <ViewModelInstanceNumber propertyValue="-350" viewModelPropertyId="0:960"/>
-            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:46"/>
-            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:47"/>
-            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:50"/>
-            <ViewModelInstanceNumber propertyValue="145" viewModelPropertyId="0:51"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:210"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:211"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:212"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:213"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:214"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:215"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:220"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:221"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:222"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:223"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:224"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:225"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:226"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:227"/>
-            <ViewModelInstanceNumber propertyValue="210" viewModelPropertyId="0:300"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:301"/>
-            <ViewModelInstanceNumber propertyValue="199" viewModelPropertyId="0:302"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:303"/>
-            <ViewModelInstanceNumber propertyValue="188" viewModelPropertyId="0:304"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:305"/>
-            <ViewModelInstanceNumber propertyValue="176" viewModelPropertyId="0:306"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:307"/>
-            <ViewModelInstanceNumber propertyValue="165" viewModelPropertyId="0:308"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:309"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:340"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:341"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:342"/>
-            <ViewModelInstanceNumber propertyValue="0.06" viewModelPropertyId="0:343"/>
-            <ViewModelInstanceNumber propertyValue="290" viewModelPropertyId="0:310"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:311"/>
-            <ViewModelInstanceNumber propertyValue="301" viewModelPropertyId="0:312"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:313"/>
-            <ViewModelInstanceNumber propertyValue="312" viewModelPropertyId="0:314"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:315"/>
-            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:316"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:317"/>
-            <ViewModelInstanceNumber propertyValue="335" viewModelPropertyId="0:318"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:319"/>
-            <ViewModelInstanceNumber propertyValue="325" viewModelPropertyId="0:344"/>
-            <ViewModelInstanceNumber propertyValue="355" viewModelPropertyId="0:345"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:346"/>
-            <ViewModelInstanceNumber propertyValue="0.075" viewModelPropertyId="0:347"/>
-            <ViewModelInstanceNumber propertyValue="230" viewModelPropertyId="0:320"/>
-            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:321"/>
-            <ViewModelInstanceNumber propertyValue="229" viewModelPropertyId="0:322"/>
-            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:323"/>
-            <ViewModelInstanceNumber propertyValue="228" viewModelPropertyId="0:324"/>
-            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:325"/>
-            <ViewModelInstanceNumber propertyValue="226" viewModelPropertyId="0:326"/>
-            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:327"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:328"/>
-            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:329"/>
-            <ViewModelInstanceNumber propertyValue="230" viewModelPropertyId="0:350"/>
-            <ViewModelInstanceNumber propertyValue="460" viewModelPropertyId="0:351"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:352"/>
-            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:353"/>
-            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:354"/>
-            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:360"/>
-            <ViewModelInstanceNumber propertyValue="485" viewModelPropertyId="0:361"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:362"/>
-            <ViewModelInstanceNumber propertyValue="0.15" viewModelPropertyId="0:363"/>
-            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:364"/>
-            <ViewModelInstanceNumber propertyValue="485" viewModelPropertyId="0:365"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:366"/>
-            <ViewModelInstanceNumber propertyValue="0.095" viewModelPropertyId="0:367"/>
-            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:355"/>
-            <ViewModelInstanceNumber propertyValue="460" viewModelPropertyId="0:356"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:357"/>
-            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:358"/>
-            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:359"/>
-            <ViewModelInstanceNumber propertyValue="270" viewModelPropertyId="0:330"/>
-            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:331"/>
-            <ViewModelInstanceNumber propertyValue="271" viewModelPropertyId="0:332"/>
-            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:333"/>
-            <ViewModelInstanceNumber propertyValue="272" viewModelPropertyId="0:334"/>
-            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:335"/>
-            <ViewModelInstanceNumber propertyValue="274" viewModelPropertyId="0:336"/>
-            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:337"/>
-            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:338"/>
-            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:339"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:700"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:701"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:702"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:703"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:704"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:705"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:706"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:707"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:708"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:709"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:710"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:711"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:712"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:713"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:714"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:715"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:716"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:717"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:718"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:719"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:720"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:721"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:722"/>
-            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:723"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1410" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1411" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1412" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1413" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1414" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1415" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1416" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1417" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1418" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1419" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1420" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1421" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1422" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1423" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1424" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1425" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1426" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1427" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1428" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1429" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1430" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1431" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1432" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1433" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1434" propertyValue="0"/>
-            <ViewModelInstanceNumber viewModelPropertyId="0:1435" propertyValue="0"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:2831" propertyValue="85" id="0:3080"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:2832" propertyValue="0" id="0:3081"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:2820" propertyValue="125" id="0:3082"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:2821" propertyValue="375" id="0:3083"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:2822" propertyValue="250" id="0:3084"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1100" id="0:3085"/>
+            <ViewModelInstanceNumber propertyValue="170" viewModelPropertyId="0:1101" id="0:3086"/>
+            <ViewModelInstanceNumber propertyValue="330" viewModelPropertyId="0:1102" id="0:3087"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1103" id="0:3088"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1104" id="0:3089"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1105" id="0:3090"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1106" id="0:3091"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1107" id="0:3092"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1108" id="0:3093"/>
+            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:1150" id="0:3094"/>
+            <ViewModelInstanceNumber propertyValue="0.32" viewModelPropertyId="0:1151" id="0:3095"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1152" id="0:3096"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1153" id="0:3097"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1154" id="0:3098"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1401" id="0:3099"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1402" id="0:3100"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1403" id="0:3101"/>
+            <ViewModelInstanceNumber propertyValue="-1200" viewModelPropertyId="0:1404" id="0:3102"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1405" id="0:3103"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:1406" id="0:3104"/>
+            <ViewModelInstanceNumber propertyValue="-350" viewModelPropertyId="0:960" id="0:3105"/>
+            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:46" id="0:3106"/>
+            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:47" id="0:3107"/>
+            <ViewModelInstanceNumber propertyValue="250" viewModelPropertyId="0:50" id="0:3108"/>
+            <ViewModelInstanceNumber propertyValue="145" viewModelPropertyId="0:51" id="0:3109"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:210" id="0:3110"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:211" id="0:3111"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:212" id="0:3112"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:213" id="0:3113"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:214" id="0:3114"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:215" id="0:3115"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:220" id="0:3116"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:221" id="0:3117"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:222" id="0:3118"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:223" id="0:3119"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:224" id="0:3120"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:225" id="0:3121"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:226" id="0:3122"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:227" id="0:3123"/>
+            <ViewModelInstanceNumber propertyValue="210" viewModelPropertyId="0:300" id="0:3124"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:301" id="0:3125"/>
+            <ViewModelInstanceNumber propertyValue="199" viewModelPropertyId="0:302" id="0:3126"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:303" id="0:3127"/>
+            <ViewModelInstanceNumber propertyValue="188" viewModelPropertyId="0:304" id="0:3128"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:305" id="0:3129"/>
+            <ViewModelInstanceNumber propertyValue="176" viewModelPropertyId="0:306" id="0:3130"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:307" id="0:3131"/>
+            <ViewModelInstanceNumber propertyValue="165" viewModelPropertyId="0:308" id="0:3132"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:309" id="0:3133"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:340" id="0:3134"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:341" id="0:3135"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:342" id="0:3136"/>
+            <ViewModelInstanceNumber propertyValue="0.06" viewModelPropertyId="0:343" id="0:3137"/>
+            <ViewModelInstanceNumber propertyValue="290" viewModelPropertyId="0:310" id="0:3138"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:311" id="0:3139"/>
+            <ViewModelInstanceNumber propertyValue="301" viewModelPropertyId="0:312" id="0:3140"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:313" id="0:3141"/>
+            <ViewModelInstanceNumber propertyValue="312" viewModelPropertyId="0:314" id="0:3142"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:315" id="0:3143"/>
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:316" id="0:3144"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:317" id="0:3145"/>
+            <ViewModelInstanceNumber propertyValue="335" viewModelPropertyId="0:318" id="0:3146"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:319" id="0:3147"/>
+            <ViewModelInstanceNumber propertyValue="325" viewModelPropertyId="0:344" id="0:3148"/>
+            <ViewModelInstanceNumber propertyValue="355" viewModelPropertyId="0:345" id="0:3149"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:346" id="0:3150"/>
+            <ViewModelInstanceNumber propertyValue="0.075" viewModelPropertyId="0:347" id="0:3151"/>
+            <ViewModelInstanceNumber propertyValue="230" viewModelPropertyId="0:320" id="0:3152"/>
+            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:321" id="0:3153"/>
+            <ViewModelInstanceNumber propertyValue="229" viewModelPropertyId="0:322" id="0:3154"/>
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:323" id="0:3155"/>
+            <ViewModelInstanceNumber propertyValue="228" viewModelPropertyId="0:324" id="0:3156"/>
+            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:325" id="0:3157"/>
+            <ViewModelInstanceNumber propertyValue="226" viewModelPropertyId="0:326" id="0:3158"/>
+            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:327" id="0:3159"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:328" id="0:3160"/>
+            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:329" id="0:3161"/>
+            <ViewModelInstanceNumber propertyValue="230" viewModelPropertyId="0:350" id="0:3162"/>
+            <ViewModelInstanceNumber propertyValue="460" viewModelPropertyId="0:351" id="0:3163"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:352" id="0:3164"/>
+            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:353" id="0:3165"/>
+            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:354" id="0:3166"/>
+            <ViewModelInstanceNumber propertyValue="225" viewModelPropertyId="0:360" id="0:3167"/>
+            <ViewModelInstanceNumber propertyValue="485" viewModelPropertyId="0:361" id="0:3168"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:362" id="0:3169"/>
+            <ViewModelInstanceNumber propertyValue="0.15" viewModelPropertyId="0:363" id="0:3170"/>
+            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:364" id="0:3171"/>
+            <ViewModelInstanceNumber propertyValue="485" viewModelPropertyId="0:365" id="0:3172"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:366" id="0:3173"/>
+            <ViewModelInstanceNumber propertyValue="0.095" viewModelPropertyId="0:367" id="0:3174"/>
+            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:355" id="0:3175"/>
+            <ViewModelInstanceNumber propertyValue="460" viewModelPropertyId="0:356" id="0:3176"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:357" id="0:3177"/>
+            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:358" id="0:3178"/>
+            <ViewModelInstanceNumber propertyValue="0.08" viewModelPropertyId="0:359" id="0:3179"/>
+            <ViewModelInstanceNumber propertyValue="270" viewModelPropertyId="0:330" id="0:3180"/>
+            <ViewModelInstanceNumber propertyValue="310" viewModelPropertyId="0:331" id="0:3181"/>
+            <ViewModelInstanceNumber propertyValue="271" viewModelPropertyId="0:332" id="0:3182"/>
+            <ViewModelInstanceNumber propertyValue="324" viewModelPropertyId="0:333" id="0:3183"/>
+            <ViewModelInstanceNumber propertyValue="272" viewModelPropertyId="0:334" id="0:3184"/>
+            <ViewModelInstanceNumber propertyValue="338" viewModelPropertyId="0:335" id="0:3185"/>
+            <ViewModelInstanceNumber propertyValue="274" viewModelPropertyId="0:336" id="0:3186"/>
+            <ViewModelInstanceNumber propertyValue="351" viewModelPropertyId="0:337" id="0:3187"/>
+            <ViewModelInstanceNumber propertyValue="275" viewModelPropertyId="0:338" id="0:3188"/>
+            <ViewModelInstanceNumber propertyValue="365" viewModelPropertyId="0:339" id="0:3189"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:700" id="0:3190"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:701" id="0:3191"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:702" id="0:3192"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:703" id="0:3193"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:704" id="0:3194"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:705" id="0:3195"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:706" id="0:3196"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:707" id="0:3197"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:708" id="0:3198"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:709" id="0:3199"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:710" id="0:3200"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:711" id="0:3201"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:712" id="0:3202"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:713" id="0:3203"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:714" id="0:3204"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:715" id="0:3205"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:716" id="0:3206"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:717" id="0:3207"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:718" id="0:3208"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:719" id="0:3209"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:720" id="0:3210"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:721" id="0:3211"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:722" id="0:3212"/>
+            <ViewModelInstanceNumber propertyValue="-500" viewModelPropertyId="0:723" id="0:3213"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1410" propertyValue="0" id="0:3214"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1411" propertyValue="0" id="0:3215"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1412" propertyValue="0" id="0:3216"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1413" propertyValue="0" id="0:3217"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1414" propertyValue="0" id="0:3218"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1415" propertyValue="0" id="0:3219"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1416" propertyValue="0" id="0:3220"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1417" propertyValue="0" id="0:3221"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1418" propertyValue="0" id="0:3222"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1419" propertyValue="0" id="0:3223"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1420" propertyValue="0" id="0:3224"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1421" propertyValue="0" id="0:3225"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1422" propertyValue="0" id="0:3226"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1423" propertyValue="0" id="0:3227"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1424" propertyValue="0" id="0:3228"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1425" propertyValue="0" id="0:3229"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1426" propertyValue="0" id="0:3230"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1427" propertyValue="0" id="0:3231"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1428" propertyValue="0" id="0:3232"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1429" propertyValue="0" id="0:3233"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1430" propertyValue="0" id="0:3234"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1431" propertyValue="0" id="0:3235"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1432" propertyValue="0" id="0:3236"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1433" propertyValue="0" id="0:3237"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1434" propertyValue="0" id="0:3238"/>
+            <ViewModelInstanceNumber viewModelPropertyId="0:1435" propertyValue="0" id="0:3239"/>
         </ViewModelInstance>
     </ViewModel>
     <ImageAsset file="assets/jiangshi/head_back.png" name="head_back" id="0:900"/>
@@ -919,5 +919,12 @@
     <ImageAsset file="assets/jiangshi/intro_story.png" name="intro_story" id="0:2823"/>
     <ImageAsset file="assets/jiangshi/intro_jiangshi_head.png" name="intro_jiangshi_head" id="0:2833"/>
     <ImageAsset file="assets/jiangshi/safe_jiangshi_peace.png" name="safe_jiangshi_peace" id="0:2842"/>
+
+    <AudioAsset name="grab" file="assets/audio/grab.wav" id="0:3249"/>
+    <AudioAsset name="dyno" file="assets/audio/dyno.wav" id="0:3250"/>
+    <AudioAsset name="rockfall" file="assets/audio/rockfall.wav" id="0:3251"/>
+    <AudioAsset name="coffin" file="assets/audio/coffin.wav" id="0:3252"/>
+    <AudioAsset name="safe" file="assets/audio/safe.wav" id="0:3253"/>
+    <AudioAsset name="ambience" file="assets/audio/ambience.wav" id="0:3254"/>
 
 </Rive>

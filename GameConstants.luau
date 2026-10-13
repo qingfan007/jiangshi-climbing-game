@@ -93,7 +93,7 @@ Constants.MAX_LIMBS_PER_HOLD = 2
 
 Constants.INITIAL_CAMERA_Y = 1400
 
-Constants.CAMERA_FOLLOW_Y = 300
+Constants.CAMERA_FOLLOW_Y = 230
 
 Constants.HOLD_RENDER_MARGIN = 80
 
